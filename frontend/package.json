@@ -1,0 +1,33 @@
+{
+  "name": "curricula-viewer-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --host 0.0.0.0 --proxy-config proxy.conf.json",
+    "build": "ng build --configuration production",
+    "test": "ng test",
+    "lint": "ng lint"
+  },
+  "dependencies": {
+    "@angular/animations": "^16.0.0",
+    "@angular/cdk": "^16.2.14",
+    "@angular/common": "^16.2.12",
+    "@angular/compiler": "^16.0.0",
+    "@angular/core": "^16.2.12",
+    "@angular/forms": "^16.0.0",
+    "@angular/material": "^16.2.14",
+    "@angular/platform-browser": "^16.0.0",
+    "@angular/platform-browser-dynamic": "^16.0.0",
+    "@angular/router": "^16.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.8.1",
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.0.0",
+    "@angular/cli": "^16.0.0",
+    "@angular/compiler-cli": "^16.0.0",
+    "@types/node": "^18.7.0",
+    "typescript": "~5.0.0"
+  }
+}

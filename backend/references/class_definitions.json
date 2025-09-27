@@ -1,0 +1,3098 @@
+{
+  "LP_0000001": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000001",
+    "label_de": "Schulfach",
+    "label_en": "school subject",
+    "display_label": "Schulfach"
+  },
+  "LP_0000002": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000002",
+    "label_de": "MINT-Fach",
+    "label_en": null,
+    "display_label": "MINT-Fach"
+  },
+  "LP_0000003": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000003",
+    "label_de": "Naturwissenschaftsfach",
+    "label_en": null,
+    "display_label": "Naturwissenschaftsfach"
+  },
+  "LP_0000004": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000004",
+    "label_de": "Fremdsprachenfach",
+    "label_en": null,
+    "display_label": "Fremdsprachenfach"
+  },
+  "LP_0000005": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000005",
+    "label_de": "Gesellschaftswissenschaftsfach",
+    "label_en": null,
+    "display_label": "Gesellschaftswissenschaftsfach"
+  },
+  "LP_0000006": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000006",
+    "label_de": "Lehrprozess",
+    "label_en": null,
+    "display_label": "Lehrprozess"
+  },
+  "LP_0000007": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000007",
+    "label_de": "Lernprozess",
+    "label_en": "Learning Process",
+    "display_label": "Lernprozess"
+  },
+  "LP_0000009": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000009",
+    "label_de": "Jahrgangsstufe",
+    "label_en": null,
+    "display_label": "Jahrgangsstufe"
+  },
+  "LP_0000010": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000010",
+    "label_de": "Person",
+    "label_en": null,
+    "display_label": "Person"
+  },
+  "LP_0000011": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000011",
+    "label_de": "Lehrer Rolle",
+    "label_en": null,
+    "display_label": "Lehrer Rolle"
+  },
+  "LP_0000012": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000012",
+    "label_de": "Schüler Rolle",
+    "label_en": null,
+    "display_label": "Schüler Rolle"
+  },
+  "LP_0000013": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000013",
+    "label_de": "Kompetenz",
+    "label_en": null,
+    "display_label": "Kompetenz"
+  },
+  "LP_0000019": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000019",
+    "label_de": "Schulabschluss",
+    "label_en": null,
+    "display_label": "Schulabschluss"
+  },
+  "LP_0000020": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000020",
+    "label_de": "Schulstufe",
+    "label_en": null,
+    "display_label": "Schulstufe"
+  },
+  "LP_0000028": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000028",
+    "label_de": "Bildungsgangniveau",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau"
+  },
+  "LP_0000037": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000037",
+    "label_de": "Niveau",
+    "label_en": null,
+    "display_label": "Niveau"
+  },
+  "LP_0000039": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000039",
+    "label_de": "BistaFach",
+    "label_en": null,
+    "display_label": "BistaFach"
+  },
+  "LP_0000040": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000040",
+    "label_de": "Bundesland Bezeichnung",
+    "label_en": "state designation",
+    "display_label": "Bundesland Bezeichnung"
+  },
+  "LP_0000053": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000053",
+    "label_de": "Berlin-Brandenburg",
+    "label_en": null,
+    "display_label": "Berlin-Brandenburg"
+  },
+  "LP_0000054": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000054",
+    "label_de": "Ohne-Berlin-Brandenburg",
+    "label_en": null,
+    "display_label": "Ohne-Berlin-Brandenburg"
+  },
+  "LP_0000056": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000056",
+    "label_de": "Einführungsphase",
+    "label_en": null,
+    "display_label": "Einführungsphase"
+  },
+  "LP_0000057": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000057",
+    "label_de": "Qualifikationsphase",
+    "label_en": null,
+    "display_label": "Qualifikationsphase"
+  },
+  "LP_0000069": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000069",
+    "label_de": "Gymnasialniveau Sek I",
+    "label_en": null,
+    "display_label": "Gymnasialniveau Sek I"
+  },
+  "LP_0000076": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000076",
+    "label_de": "Allgemeine Hochschulreife",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife"
+  },
+  "LP_0000077": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000077",
+    "label_de": "Fachabitur",
+    "label_en": null,
+    "display_label": "Fachabitur"
+  },
+  "LP_0000078": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000078",
+    "label_de": "Mittlerer Schulabschluss",
+    "label_en": null,
+    "display_label": "Mittlerer Schulabschluss"
+  },
+  "LP_0000079": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000079",
+    "label_de": "Erster Schulabschluss",
+    "label_en": null,
+    "display_label": "Erster Schulabschluss"
+  },
+  "LP_0000081": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000081",
+    "label_de": "Förderschulabschluss",
+    "label_en": null,
+    "display_label": "Förderschulabschluss"
+  },
+  "LP_0000105": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000105",
+    "label_de": "Mittlerer Abschluss (BE)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (BE)"
+  },
+  "LP_0000106": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000106",
+    "label_de": "Erster Abschluss (BE)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (BE)"
+  },
+  "LP_0000109": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000109",
+    "label_de": "Allgemeine Hochschulreife (BE)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (BE)"
+  },
+  "LP_0000111": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000111",
+    "label_de": "Schulart",
+    "label_en": "school type",
+    "display_label": "Schulart"
+  },
+  "LP_0000144": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000144",
+    "label_de": "Erster Abschluss (BW)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (BW)"
+  },
+  "LP_0000145": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000145",
+    "label_de": "Mittlerer Schulabschluss (BW)",
+    "label_en": null,
+    "display_label": "Mittlerer Schulabschluss (BW)"
+  },
+  "LP_0000146": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000146",
+    "label_de": "Allgemeine Hochschulreife (BW)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (BW)"
+  },
+  "LP_0000160": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000160",
+    "label_de": "Allgemeine Hochschulreife (TH)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (TH)"
+  },
+  "LP_0000161": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000161",
+    "label_de": "Allgemeine Hochschulreife (NI)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (NI)"
+  },
+  "LP_0000162": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000162",
+    "label_de": "Allgemeine Hochschulreife (NW)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (NW)"
+  },
+  "LP_0000163": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000163",
+    "label_de": "Allgemeine Hochschulreife (HH)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (HH)"
+  },
+  "LP_0000164": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000164",
+    "label_de": "Allgemeine Hochschulreife (RP)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (RP)"
+  },
+  "LP_0000165": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000165",
+    "label_de": "Allgemeine Hochschulreife (SN)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (SN)"
+  },
+  "LP_0000168": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000168",
+    "label_de": "Allgemeine Hochschulreife (HE)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (HE)"
+  },
+  "LP_0000169": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000169",
+    "label_de": "Allgemeine Hochschulreife (BY)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (BY)"
+  },
+  "LP_0000170": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000170",
+    "label_de": "Allgemeine Hochschulreife (MV)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (MV)"
+  },
+  "LP_0000171": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000171",
+    "label_de": "Allgemeine Hochschulreife (ST)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (ST)"
+  },
+  "LP_0000172": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000172",
+    "label_de": "Allgemeine Hochschulreife (SH)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (SH)"
+  },
+  "LP_0000173": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000173",
+    "label_de": "Allgemeine Hochschulreife (SL)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (SL)"
+  },
+  "LP_0000174": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000174",
+    "label_de": "Allgemeine Hochschulreife (HB)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (HB)"
+  },
+  "LP_0000175": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000175",
+    "label_de": "Allgemeine Hochschulreife (BB)",
+    "label_en": null,
+    "display_label": "Allgemeine Hochschulreife (BB)"
+  },
+  "LP_0000176": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000176",
+    "label_de": "Erster Abschluss (TH)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (TH)"
+  },
+  "LP_0000177": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000177",
+    "label_de": "Erster Abschluss (NI)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (NI)"
+  },
+  "LP_0000178": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000178",
+    "label_de": "Erster Abschluss (NW)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (NW)"
+  },
+  "LP_0000179": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000179",
+    "label_de": "Erster Abschluss (HH)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (HH)"
+  },
+  "LP_0000180": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000180",
+    "label_de": "Erster Abschluss (RP)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (RP)"
+  },
+  "LP_0000181": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000181",
+    "label_de": "Erster Abschluss (SN)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (SN)"
+  },
+  "LP_0000182": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000182",
+    "label_de": "Erster Abschluss (HE)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (HE)"
+  },
+  "LP_0000183": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000183",
+    "label_de": "Erster Abschluss (BY)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (BY)"
+  },
+  "LP_0000184": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000184",
+    "label_de": "Erster Abschluss (MV)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (MV)"
+  },
+  "LP_0000185": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000185",
+    "label_de": "Erster Abschluss (ST)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (ST)"
+  },
+  "LP_0000186": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000186",
+    "label_de": "Erster Abschluss (SH)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (SH)"
+  },
+  "LP_0000187": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000187",
+    "label_de": "Erster Abschluss (SL)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (SL)"
+  },
+  "LP_0000188": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000188",
+    "label_de": "Erster Abschluss (HB)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (HB)"
+  },
+  "LP_0000189": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000189",
+    "label_de": "Erster Abschluss (BB)",
+    "label_en": null,
+    "display_label": "Erster Abschluss (BB)"
+  },
+  "LP_0000200": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000200",
+    "label_de": "Mittlerer Abschluss (TH)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (TH)"
+  },
+  "LP_0000201": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000201",
+    "label_de": "Mittlerer Abschluss (NI)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (NI)"
+  },
+  "LP_0000202": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000202",
+    "label_de": "Mittlerer Abschluss (NW)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (NW)"
+  },
+  "LP_0000203": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000203",
+    "label_de": "Mittlerer Abschluss (HH)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (HH)"
+  },
+  "LP_0000204": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000204",
+    "label_de": "Mittlerer Abschluss (RP)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (RP)"
+  },
+  "LP_0000205": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000205",
+    "label_de": "Mittlerer Abschluss (SN)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (SN)"
+  },
+  "LP_0000206": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000206",
+    "label_de": "Mittlerer Abschluss (HE)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (HE)"
+  },
+  "LP_0000207": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000207",
+    "label_de": "Mittlerer Abschluss (BY)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (BY)"
+  },
+  "LP_0000208": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000208",
+    "label_de": "Mittlerer Abschluss (MV)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (MV)"
+  },
+  "LP_0000209": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000209",
+    "label_de": "Mittlerer Abschluss (ST)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (ST)"
+  },
+  "LP_0000210": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000210",
+    "label_de": "Mittlerer Abschluss (SH)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (SH)"
+  },
+  "LP_0000211": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000211",
+    "label_de": "Mittlerer Abschluss (SL)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (SL)"
+  },
+  "LP_0000212": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000212",
+    "label_de": "Mittlerer Abschluss (HB)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (HB)"
+  },
+  "LP_0000213": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000213",
+    "label_de": "Mittlerer Abschluss (BB)",
+    "label_en": null,
+    "display_label": "Mittlerer Abschluss (BB)"
+  },
+  "LP_0000261": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000261",
+    "label_de": "Curriculares Element",
+    "label_en": null,
+    "display_label": "Curriculares Element"
+  },
+  "LP_0000263": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000263",
+    "label_de": "CE-Kompetenzspezifikation",
+    "label_en": null,
+    "display_label": "CE-Kompetenzspezifikation"
+  },
+  "LP_0000265": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000265",
+    "label_de": "Fachniveau",
+    "label_en": null,
+    "display_label": "Fachniveau"
+  },
+  "LP_0000268": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000268",
+    "label_de": "Leitidee (Bista)",
+    "label_en": null,
+    "display_label": "Leitidee (Bista)"
+  },
+  "LP_0000328": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000328",
+    "label_de": "Thema (RP)",
+    "label_en": null,
+    "display_label": "Thema (RP)"
+  },
+  "LP_0000332": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000332",
+    "label_de": "CE-Lerninhalt",
+    "label_en": null,
+    "display_label": "CE-Lerninhalt"
+  },
+  "LP_0000336": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000336",
+    "label_de": "Fachbezogene Kompetenzspezifikation",
+    "label_en": null,
+    "display_label": "Fachbezogene Kompetenzspezifikation"
+  },
+  "LP_0000337": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000337",
+    "label_de": "Fach- und Lernbereichsübergreifende Kompetenzspezifikation",
+    "label_en": null,
+    "display_label": "Fach- und Lernbereichsübergreifende Kompetenzspezifikation"
+  },
+  "LP_0000339": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000339",
+    "label_de": "Gemeinschaftskunde",
+    "label_en": null,
+    "display_label": "Gemeinschaftskunde"
+  },
+  "LP_0000341": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000341",
+    "label_de": "Gymnasiale Oberstufe",
+    "label_en": null,
+    "display_label": "Gymnasiale Oberstufe"
+  },
+  "LP_0000342": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000342",
+    "label_de": "Element (RP)",
+    "label_en": null,
+    "display_label": "Element (RP)"
+  },
+  "LP_0000345": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000345",
+    "label_de": "Teilthema (RP)",
+    "label_en": null,
+    "display_label": "Teilthema (RP)"
+  },
+  "LP_0000346": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000346",
+    "label_de": "Titel",
+    "label_en": null,
+    "display_label": "Titel"
+  },
+  "LP_0000347": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000347",
+    "label_de": "Identifikationsnummer",
+    "label_en": null,
+    "display_label": "Identifikationsnummer"
+  },
+  "LP_0000349": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000349",
+    "label_de": "CE-Bereich",
+    "label_en": null,
+    "display_label": "CE-Bereich"
+  },
+  "LP_0000350": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000350",
+    "label_de": "Lernziel (RP)",
+    "label_en": null,
+    "display_label": "Lernziel (RP)"
+  },
+  "LP_0000352": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000352",
+    "label_de": "Unterteilthema (RP)",
+    "label_en": null,
+    "display_label": "Unterteilthema (RP)"
+  },
+  "LP_0000353": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000353",
+    "label_de": "Lehrplanfragment (RP)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (RP)"
+  },
+  "LP_0000365": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000365",
+    "label_de": "Orientierungsstufe",
+    "label_en": null,
+    "display_label": "Orientierungsstufe"
+  },
+  "LP_0000421": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000421",
+    "label_de": "KombinierterBereichRP",
+    "label_en": null,
+    "display_label": "KombinierterBereichRP"
+  },
+  "LP_0000423": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000423",
+    "label_de": "Verweis auf Übung",
+    "label_en": null,
+    "display_label": "Verweis auf Übung"
+  },
+  "LP_0000424": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000424",
+    "label_de": "Verweis auf Inhalt",
+    "label_en": null,
+    "display_label": "Verweis auf Inhalt"
+  },
+  "LP_0000425": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000425",
+    "label_de": "Verweis auf Material",
+    "label_en": null,
+    "display_label": "Verweis auf Material"
+  },
+  "LP_0000426": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000426",
+    "label_de": "Element (HH)",
+    "label_en": null,
+    "display_label": "Element (HH)"
+  },
+  "LP_0000428": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000428",
+    "label_de": "Inhalt (HH)",
+    "label_en": null,
+    "display_label": "Inhalt (HH)"
+  },
+  "LP_0000429": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000429",
+    "label_de": null,
+    "label_en": "Themenfeld",
+    "display_label": "Themenfeld"
+  },
+  "LP_0000431": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000431",
+    "label_de": "Kompetenzbereich (RP)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (RP)"
+  },
+  "LP_0000432": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000432",
+    "label_de": "Kompetenz (RP)",
+    "label_en": null,
+    "display_label": "Kompetenz (RP)"
+  },
+  "LP_0000433": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000433",
+    "label_de": "Lehrplan (RP)",
+    "label_en": null,
+    "display_label": "Lehrplan (RP)"
+  },
+  "LP_0000434": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000434",
+    "label_de": "Element (BY)",
+    "label_en": null,
+    "display_label": "Element (BY)"
+  },
+  "LP_0000435": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000435",
+    "label_de": "Fachniveau Sek II (BY)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (BY)"
+  },
+  "LP_0000438": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000438",
+    "label_de": "Lehrplan",
+    "label_en": null,
+    "display_label": "Lehrplan"
+  },
+  "LP_0000441": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000441",
+    "label_de": "Element (BB)",
+    "label_en": null,
+    "display_label": "Element (BB)"
+  },
+  "LP_0000443": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000443",
+    "label_de": "Niveaustufe (BE/BB)",
+    "label_en": null,
+    "display_label": "Niveaustufe (BE/BB)"
+  },
+  "LP_0000445": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000445",
+    "label_de": "Lerninhalt (BB)",
+    "label_en": "learning content (BB)",
+    "display_label": "Lerninhalt (BB)"
+  },
+  "LP_0000446": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000446",
+    "label_de": "Lernmaterial (BB)",
+    "label_en": "learning material (BB)",
+    "display_label": "Lernmaterial (BB)"
+  },
+  "LP_0000447": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000447",
+    "label_de": "Standard (BB)",
+    "label_en": "standard (BB)",
+    "display_label": "Standard (BB)"
+  },
+  "LP_0000448": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000448",
+    "label_de": "Thema (BB)",
+    "label_en": "topic (BB)",
+    "display_label": "Thema (BB)"
+  },
+  "LP_0000449": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000449",
+    "label_de": "Themenfeld (BB)",
+    "label_en": "topic area (BB)",
+    "display_label": "Themenfeld (BB)"
+  },
+  "LP_0000450": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000450",
+    "label_de": "Zusatzmaterial (BB)",
+    "label_en": "additional material (BB)",
+    "display_label": "Zusatzmaterial (BB)"
+  },
+  "LP_0000451": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000451",
+    "label_de": "Übung (BB)",
+    "label_en": "exercise (BB)",
+    "display_label": "Übung (BB)"
+  },
+  "LP_0000459": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000459",
+    "label_de": "Kompetenzbereich (BB)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (BB)"
+  },
+  "LP_0000475": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000475",
+    "label_de": "Schulartfunktion",
+    "label_en": null,
+    "display_label": "Schulartfunktion"
+  },
+  "LP_0000478": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000478",
+    "label_de": "Funktionsspezifikation",
+    "label_en": null,
+    "display_label": "Funktionsspezifikation"
+  },
+  "LP_0000479": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000479",
+    "label_de": "Kompetenzbeschreibungsfunktion",
+    "label_en": null,
+    "display_label": "Kompetenzbeschreibungsfunktion"
+  },
+  "LP_0000480": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000480",
+    "label_de": "Lerninhaltsbeschreibungsfunktion",
+    "label_en": null,
+    "display_label": "Lerninhaltsbeschreibungsfunktion"
+  },
+  "LP_0000481": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000481",
+    "label_de": "Materialbeschreibungsfunktion",
+    "label_en": null,
+    "display_label": "Materialbeschreibungsfunktion"
+  },
+  "LP_0000482": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000482",
+    "label_de": "Strukturierungsfunktion",
+    "label_en": null,
+    "display_label": "Strukturierungsfunktion"
+  },
+  "LP_0000493": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000493",
+    "label_de": "Beschreibungsfunktion",
+    "label_en": null,
+    "display_label": "Beschreibungsfunktion"
+  },
+  "LP_0000497": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000497",
+    "label_de": "Bereichsfunktion",
+    "label_en": null,
+    "display_label": "Bereichsfunktion"
+  },
+  "LP_0000499": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000499",
+    "label_de": "Bezugsfunktionen",
+    "label_en": null,
+    "display_label": "Bezugsfunktionen"
+  },
+  "LP_0000500": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000500",
+    "label_de": "Prozessbezugsfunktion",
+    "label_en": null,
+    "display_label": "Prozessbezugsfunktion"
+  },
+  "LP_0000501": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000501",
+    "label_de": "Inhaltsbezugsfunktion",
+    "label_en": null,
+    "display_label": "Inhaltsbezugsfunktion"
+  },
+  "LP_0000502": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000502",
+    "label_de": "Fachbezugsfunktion",
+    "label_en": null,
+    "display_label": "Fachbezugsfunktion"
+  },
+  "LP_0000504": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000504",
+    "label_de": "Lernbereichsbezugsfunktion",
+    "label_en": null,
+    "display_label": "Lernbereichsbezugsfunktion"
+  },
+  "LP_0000530": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000530",
+    "label_de": "Grundkursniveau",
+    "label_en": null,
+    "display_label": "Grundkursniveau"
+  },
+  "LP_0000531": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000531",
+    "label_de": "Leistungskursniveau",
+    "label_en": null,
+    "display_label": "Leistungskursniveau"
+  },
+  "LP_0000536": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000536",
+    "label_de": "Element (Bista)",
+    "label_en": null,
+    "display_label": "Element (Bista)"
+  },
+  "LP_0000540": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000540",
+    "label_de": "Schulfachbezug",
+    "label_en": null,
+    "display_label": "Schulfachbezug"
+  },
+  "LP_0000541": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000541",
+    "label_de": "Erste Fremdsprache",
+    "label_en": null,
+    "display_label": "Erste Fremdsprache"
+  },
+  "LP_0000542": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000542",
+    "label_de": "Zweite Fremdsprache",
+    "label_en": null,
+    "display_label": "Zweite Fremdsprache"
+  },
+  "LP_0000543": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000543",
+    "label_de": "Dritte Fremdsprache",
+    "label_en": null,
+    "display_label": "Dritte Fremdsprache"
+  },
+  "LP_0000544": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000544",
+    "label_de": "Pflichtfach",
+    "label_en": null,
+    "display_label": "Pflichtfach"
+  },
+  "LP_0000545": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000545",
+    "label_de": "Wahlpflichtfach",
+    "label_en": null,
+    "display_label": "Wahlpflichtfach"
+  },
+  "LP_0000551": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000551",
+    "label_de": "Wahlfach",
+    "label_en": null,
+    "display_label": "Wahlfach"
+  },
+  "LP_0000571": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000571",
+    "label_de": "Bildungsstandard (KMK)",
+    "label_en": null,
+    "display_label": "Bildungsstandard (KMK)"
+  },
+  "LP_0000572": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000572",
+    "label_de": "Bildungsgangniveau (BB / BE)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (BB / BE)"
+  },
+  "LP_0000573": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000573",
+    "label_de": "BOA",
+    "label_en": null,
+    "display_label": "BOA"
+  },
+  "LP_0000574": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000574",
+    "label_de": "BBR",
+    "label_en": null,
+    "display_label": "BBR"
+  },
+  "LP_0000575": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000575",
+    "label_de": "EBBR",
+    "label_en": null,
+    "display_label": "EBBR"
+  },
+  "LP_0000576": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000576",
+    "label_de": "MSA",
+    "label_en": null,
+    "display_label": "MSA"
+  },
+  "LP_0000577": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000577",
+    "label_de": "QualiPhase",
+    "label_en": null,
+    "display_label": "QualiPhase"
+  },
+  "LP_0000627": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000627",
+    "label_de": "Fragmentfunktion",
+    "label_en": null,
+    "display_label": "Fragmentfunktion"
+  },
+  "LP_0000802": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000802",
+    "label_de": "Anforderungsbereich",
+    "label_en": null,
+    "display_label": "Anforderungsbereich"
+  },
+  "LP_0000806": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000806",
+    "label_de": "Bildungsplan (BW)",
+    "label_en": null,
+    "display_label": "Bildungsplan (BW)"
+  },
+  "LP_0000807": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000807",
+    "label_de": "Rahmenlehrplan (BB)",
+    "label_en": null,
+    "display_label": "Rahmenlehrplan (BB)"
+  },
+  "LP_0000808": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000808",
+    "label_de": "Organisation",
+    "label_en": null,
+    "display_label": "Organisation"
+  },
+  "LP_0000809": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000809",
+    "label_de": "Schule",
+    "label_en": null,
+    "display_label": "Schule"
+  },
+  "LP_0000810": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000810",
+    "label_de": "Schulklasse",
+    "label_en": null,
+    "display_label": "Schulklasse"
+  },
+  "LP_0000813": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000813",
+    "label_de": "Hauptschulbildungsgang",
+    "label_en": "Hauptschule Track",
+    "display_label": "Hauptschulbildungsgang"
+  },
+  "LP_0000814": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000814",
+    "label_de": "Realschulbildungsgang",
+    "label_en": "Realschule Track",
+    "display_label": "Realschulbildungsgang"
+  },
+  "LP_0000815": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000815",
+    "label_de": "Gymnasialer Bildungsgang",
+    "label_en": "Gymnasium Track",
+    "display_label": "Gymnasialer Bildungsgang"
+  },
+  "LP_0000816": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000816",
+    "label_de": "Bildungsgang",
+    "label_en": null,
+    "display_label": "Bildungsgang"
+  },
+  "LP_0000818": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000818",
+    "label_de": "Lehrplan (SN)",
+    "label_en": null,
+    "display_label": "Lehrplan (SN)"
+  },
+  "LP_0000819": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000819",
+    "label_de": "LehrplanPLUS (BY)",
+    "label_en": null,
+    "display_label": "LehrplanPLUS (BY)"
+  },
+  "LP_0000820": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000820",
+    "label_de": "Lehrplan (TH)",
+    "label_en": null,
+    "display_label": "Lehrplan (TH)"
+  },
+  "LP_0000821": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000821",
+    "label_de": "Bildungsplan (HB)",
+    "label_en": null,
+    "display_label": "Bildungsplan (HB)"
+  },
+  "LP_0000822": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000822",
+    "label_de": "Bildungsplan (HH)",
+    "label_en": null,
+    "display_label": "Bildungsplan (HH)"
+  },
+  "LP_0000823": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000823",
+    "label_de": "Kerncurriculum (NI)",
+    "label_en": null,
+    "display_label": "Kerncurriculum (NI)"
+  },
+  "LP_0000824": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000824",
+    "label_de": "Fachanforderung (SH)",
+    "label_en": null,
+    "display_label": "Fachanforderung (SH)"
+  },
+  "LP_0000825": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000825",
+    "label_de": "Lehrplan (SL)",
+    "label_en": null,
+    "display_label": "Lehrplan (SL)"
+  },
+  "LP_0000826": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000826",
+    "label_de": "Lehrplan (ST)",
+    "label_en": null,
+    "display_label": "Lehrplan (ST)"
+  },
+  "LP_0000829": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000829",
+    "label_de": "Anforderungsbereichsbeschreibungsfunktion",
+    "label_en": null,
+    "display_label": "Anforderungsbereichsbeschreibungsfunktion"
+  },
+  "LP_0000832": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000832",
+    "label_de": "Realschulniveau",
+    "label_en": null,
+    "display_label": "Realschulniveau"
+  },
+  "LP_0000834": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000834",
+    "label_de": "Hauptschulniveau",
+    "label_en": null,
+    "display_label": "Hauptschulniveau"
+  },
+  "LP_0000835": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000835",
+    "label_de": "Gymnasialniveau Sek II",
+    "label_en": null,
+    "display_label": "Gymnasialniveau Sek II"
+  },
+  "LP_0000845": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000845",
+    "label_de": "CE-Progressionsstufe",
+    "label_en": null,
+    "display_label": "CE-Progressionsstufe"
+  },
+  "LP_0000851": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000851",
+    "label_de": "Niveauspezifikationsfunktion",
+    "label_en": null,
+    "display_label": "Niveauspezifikationsfunktion"
+  },
+  "LP_0000852": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0000852",
+    "label_de": "CE-Hinweis",
+    "label_en": null,
+    "display_label": "CE-Hinweis"
+  },
+  "LP_0001000": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001000",
+    "label_de": "Kernlehrplan (NW)",
+    "label_en": null,
+    "display_label": "Kernlehrplan (NW)"
+  },
+  "LP_0001001": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001001",
+    "label_de": "Lehrplanfragment (HE)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (HE)"
+  },
+  "LP_0001002": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001002",
+    "label_de": "Inhaltsfeld (HE)",
+    "label_en": null,
+    "display_label": "Inhaltsfeld (HE)"
+  },
+  "LP_0001003": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001003",
+    "label_de": "Erwartete Kompetenz (NI)",
+    "label_en": null,
+    "display_label": "Erwartete Kompetenz (NI)"
+  },
+  "LP_0001005": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001005",
+    "label_de": "Kompetenzbereich (HE)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (HE)"
+  },
+  "LP_0001006": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001006",
+    "label_de": "Lehrplanfragment (NI)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (NI)"
+  },
+  "LP_0001007": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001007",
+    "label_de": "Kerninhalt (NI)",
+    "label_en": null,
+    "display_label": "Kerninhalt (NI)"
+  },
+  "LP_0001008": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001008",
+    "label_de": "Lerninhalt (NI)",
+    "label_en": null,
+    "display_label": "Lerninhalt (NI)"
+  },
+  "LP_0001009": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001009",
+    "label_de": "Ergänzender Hinweis (NI)",
+    "label_en": null,
+    "display_label": "Ergänzender Hinweis (NI)"
+  },
+  "LP_0001010": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001010",
+    "label_de": "Übergeordnetes Themenfeld (HE)",
+    "label_en": null,
+    "display_label": "Übergeordnetes Themenfeld (HE)"
+  },
+  "LP_0001011": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001011",
+    "label_de": "Bildungsgangniveau (MV)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (MV)"
+  },
+  "LP_0001014": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001014",
+    "label_de": "Hinweisbeschreibungsfunktion",
+    "label_en": null,
+    "display_label": "Hinweisbeschreibungsfunktion"
+  },
+  "LP_0001015": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001015",
+    "label_de": "CE-Fragment",
+    "label_en": null,
+    "display_label": "CE-Fragment"
+  },
+  "LP_0001018": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001018",
+    "label_de": "Fachniveau Sek II (RP)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (RP)"
+  },
+  "LP_0001019": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001019",
+    "label_de": "Bildungsgangniveau (RP)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (RP)"
+  },
+  "LP_0001025": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001025",
+    "label_de": "Fachniveau Sek II (SL)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (SL)"
+  },
+  "LP_0001028": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001028",
+    "label_de": "Bildungsgangniveau (SL)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (SL)"
+  },
+  "LP_0001032": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001032",
+    "label_de": "Bildungsgangniveau (SN)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (SN)"
+  },
+  "LP_0001035": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001035",
+    "label_de": "Bildungsgangniveau (ST)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (ST)"
+  },
+  "LP_0001038": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001038",
+    "label_de": "Bildungsgangniveau (TH)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (TH)"
+  },
+  "LP_0001101": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001101",
+    "label_de": "Bildungsgangniveau (BW)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (BW)"
+  },
+  "LP_0001105": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001105",
+    "label_de": "Bildungsgangniveau (HB)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (HB)"
+  },
+  "LP_0001108": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001108",
+    "label_de": "Bildungsgangniveau (HH)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (HH)"
+  },
+  "LP_0001169": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001169",
+    "label_de": "Fachniveau Sek II (BE)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (BE)"
+  },
+  "LP_0001223": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001223",
+    "label_de": "Lehrplanfragment (BE)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (BE)"
+  },
+  "LP_0001224": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001224",
+    "label_de": "Leitidee (BE)",
+    "label_en": null,
+    "display_label": "Leitidee (BE)"
+  },
+  "LP_0001226": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001226",
+    "label_de": "Eingangsvoraussetzung (BE)",
+    "label_en": null,
+    "display_label": "Eingangsvoraussetzung (BE)"
+  },
+  "LP_0001227": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001227",
+    "label_de": "Unterrichtsanregung (BE)",
+    "label_en": null,
+    "display_label": "Unterrichtsanregung (BE)"
+  },
+  "LP_0001228": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001228",
+    "label_de": "Gegenstand (BE)",
+    "label_en": null,
+    "display_label": "Gegenstand (BE)"
+  },
+  "LP_0001441": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001441",
+    "label_de": "Element (BE)",
+    "label_en": null,
+    "display_label": "Element (BE)"
+  },
+  "LP_0001445": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001445",
+    "label_de": "Lerninhalt (BE)",
+    "label_en": "learning content (BE)",
+    "display_label": "Lerninhalt (BE)"
+  },
+  "LP_0001446": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001446",
+    "label_de": "Lernmaterial (BE)",
+    "label_en": "learning material (BE)",
+    "display_label": "Lernmaterial (BE)"
+  },
+  "LP_0001447": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001447",
+    "label_de": "Standard (BE)",
+    "label_en": "standard (BE)",
+    "display_label": "Standard (BE)"
+  },
+  "LP_0001448": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001448",
+    "label_de": "Thema (BE)",
+    "label_en": "topic (BE)",
+    "display_label": "Thema (BE)"
+  },
+  "LP_0001449": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001449",
+    "label_de": "Themenfeld (BE)",
+    "label_en": "topic area (BE)",
+    "display_label": "Themenfeld (BE)"
+  },
+  "LP_0001450": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001450",
+    "label_de": "Zusatzmaterial (BE)",
+    "label_en": "additional material (BE)",
+    "display_label": "Zusatzmaterial (BE)"
+  },
+  "LP_0001451": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001451",
+    "label_de": "Übung (BE)",
+    "label_en": "exercise (BE)",
+    "display_label": "Übung (BE)"
+  },
+  "LP_0001459": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0001459",
+    "label_de": "Kompetenzbereich (BE)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (BE)"
+  },
+  "LP_0002043": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002043",
+    "label_de": "Fachlehrplan (BY)",
+    "label_en": null,
+    "display_label": "Fachlehrplan (BY)"
+  },
+  "LP_0002044": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002044",
+    "label_de": "Lehrplanfragment (BY)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (BY)"
+  },
+  "LP_0002046": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002046",
+    "label_de": "Lernbereich (BY)",
+    "label_en": null,
+    "display_label": "Lernbereich (BY)"
+  },
+  "LP_0002047": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002047",
+    "label_de": "Teillernbereich (BY)",
+    "label_en": null,
+    "display_label": "Teillernbereich (BY)"
+  },
+  "LP_0002048": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002048",
+    "label_de": "Kompetenzerwartungen und Inhalte (BY)",
+    "label_en": null,
+    "display_label": "Kompetenzerwartungen und Inhalte (BY)"
+  },
+  "LP_0002049": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002049",
+    "label_de": "Kompetenzerwartungen (BY)",
+    "label_en": null,
+    "display_label": "Kompetenzerwartungen (BY)"
+  },
+  "LP_0002050": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002050",
+    "label_de": "Inhalte zu den Kompetenzen (BY)",
+    "label_en": null,
+    "display_label": "Inhalte zu den Kompetenzen (BY)"
+  },
+  "LP_0002051": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002051",
+    "label_de": "Element (BW)",
+    "label_en": null,
+    "display_label": "Element (BW)"
+  },
+  "LP_0002052": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002052",
+    "label_de": "Lehrplanfragment (BW)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (BW)"
+  },
+  "LP_0002057": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002057",
+    "label_de": "Prozessbezogene Kompetenz (BW)",
+    "label_en": null,
+    "display_label": "Prozessbezogene Kompetenz (BW)"
+  },
+  "LP_0002059": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002059",
+    "label_de": "Inhaltsbezogene Kompetenz (BW)",
+    "label_en": null,
+    "display_label": "Inhaltsbezogene Kompetenz (BW)"
+  },
+  "LP_0002060": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002060",
+    "label_de": "Denkanstoß (BW)",
+    "label_en": null,
+    "display_label": "Denkanstoß (BW)"
+  },
+  "LP_0002061": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002061",
+    "label_de": "Teilkompetenz (BW)",
+    "label_en": null,
+    "display_label": "Teilkompetenz (BW)"
+  },
+  "LP_0002063": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002063",
+    "label_de": "Leitidee (BW)",
+    "label_en": null,
+    "display_label": "Leitidee (BW)"
+  },
+  "LP_0002064": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002064",
+    "label_de": "Fachniveau Sek II (BW)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (BW)"
+  },
+  "LP_0002069": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002069",
+    "label_de": "Fachniveau Sek II (BB)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (BB)"
+  },
+  "LP_0002072": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002072",
+    "label_de": "Fachniveau Sek II (HH)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (HH)"
+  },
+  "LP_0002076": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002076",
+    "label_de": "Element (HE)",
+    "label_en": null,
+    "display_label": "Element (HE)"
+  },
+  "LP_0002077": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002077",
+    "label_de": "Fachniveau Sek II (HE)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (HE)"
+  },
+  "LP_0002080": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002080",
+    "label_de": "Element (MV)",
+    "label_en": null,
+    "display_label": "Element (MV)"
+  },
+  "LP_0002081": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002081",
+    "label_de": "Fachniveau Sek II (MV)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (MV)"
+  },
+  "LP_0002085": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002085",
+    "label_de": "Element (NW)",
+    "label_en": null,
+    "display_label": "Element (NW)"
+  },
+  "LP_0002086": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002086",
+    "label_de": "Fachniveau Sek II (NW)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (NW)"
+  },
+  "LP_0002089": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002089",
+    "label_de": "Element (SN)",
+    "label_en": null,
+    "display_label": "Element (SN)"
+  },
+  "LP_0002090": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002090",
+    "label_de": "Fachniveau Sek II (SN)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (SN)"
+  },
+  "LP_0002093": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002093",
+    "label_de": "Element (ST)",
+    "label_en": null,
+    "display_label": "Element (ST)"
+  },
+  "LP_0002094": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002094",
+    "label_de": "Fachniveau Sek II (ST)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (ST)"
+  },
+  "LP_0002097": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002097",
+    "label_de": "Element (TH)",
+    "label_en": null,
+    "display_label": "Element (TH)"
+  },
+  "LP_0002098": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002098",
+    "label_de": "Fachniveau Sek II (TH)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (TH)"
+  },
+  "LP_0002101": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002101",
+    "label_de": "Element (NI)",
+    "label_en": null,
+    "display_label": "Element (NI)"
+  },
+  "LP_0002102": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002102",
+    "label_de": "Element (SL)",
+    "label_en": null,
+    "display_label": "Element (SL)"
+  },
+  "LP_0002103": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002103",
+    "label_de": "Element (SH)",
+    "label_en": null,
+    "display_label": "Element (SH)"
+  },
+  "LP_0002110": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002110",
+    "label_de": "Lehrplanfragment (SN)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (SN)"
+  },
+  "LP_0002113": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002113",
+    "label_de": "Lernbereich (SN)",
+    "label_en": null,
+    "display_label": "Lernbereich (SN)"
+  },
+  "LP_0002114": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002114",
+    "label_de": "Wahlbereich (SN)",
+    "label_en": null,
+    "display_label": "Wahlbereich (SN)"
+  },
+  "LP_0002115": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002115",
+    "label_de": "Lernziel und Lerninhalt (SN)",
+    "label_en": null,
+    "display_label": "Lernziel und Lerninhalt (SN)"
+  },
+  "LP_0002116": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002116",
+    "label_de": "Bemerkung (SN)",
+    "label_en": null,
+    "display_label": "Bemerkung (SN)"
+  },
+  "LP_0002118": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002118",
+    "label_de": "Element (HB)",
+    "label_en": null,
+    "display_label": "Element (HB)"
+  },
+  "LP_0002119": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002119",
+    "label_de": "Fachniveau Sek II (HB)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (HB)"
+  },
+  "LP_0002122": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002122",
+    "label_de": "Lehrplanfragment (HB)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (HB)"
+  },
+  "LP_0002123": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002123",
+    "label_de": "Fach (HB)",
+    "label_en": null,
+    "display_label": "Fach (HB)"
+  },
+  "LP_0002124": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002124",
+    "label_de": "Jahrgangsstufe (HB)",
+    "label_en": null,
+    "display_label": "Jahrgangsstufe (HB)"
+  },
+  "LP_0002126": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002126",
+    "label_de": "Aufgabenbereiche (HB)",
+    "label_en": null,
+    "display_label": "Aufgabenbereiche (HB)"
+  },
+  "LP_0002127": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002127",
+    "label_de": "Teilaufgabenbereiche (HB)",
+    "label_en": null,
+    "display_label": "Teilaufgabenbereiche (HB)"
+  },
+  "LP_0002128": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002128",
+    "label_de": "Anforderungen (HB)",
+    "label_en": null,
+    "display_label": "Anforderungen (HB)"
+  },
+  "LP_0002129": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002129",
+    "label_de": "Inhalte (HB)",
+    "label_en": null,
+    "display_label": "Inhalte (HB)"
+  },
+  "LP_0002130": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002130",
+    "label_de": "Themenbereich (HB)",
+    "label_en": null,
+    "display_label": "Themenbereich (HB)"
+  },
+  "LP_0002131": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002131",
+    "label_de": "Teilthemenbereich (HB)",
+    "label_en": null,
+    "display_label": "Teilthemenbereich (HB)"
+  },
+  "LP_0002132": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002132",
+    "label_de": "Kompetenzen (HB)",
+    "label_en": null,
+    "display_label": "Kompetenzen (HB)"
+  },
+  "LP_0002133": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002133",
+    "label_de": "Themenfelder (HB)",
+    "label_en": null,
+    "display_label": "Themenfelder (HB)"
+  },
+  "LP_0002134": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002134",
+    "label_de": "Kommentar (HB)",
+    "label_en": null,
+    "display_label": "Kommentar (HB)"
+  },
+  "LP_0002135": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002135",
+    "label_de": "Kompetenzbereich (HB)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (HB)"
+  },
+  "LP_0002136": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002136",
+    "label_de": "Lehrplanfragment (MV)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (MV)"
+  },
+  "LP_0002139": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002139",
+    "label_de": "Kompetenzbereich (MV)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (MV)"
+  },
+  "LP_0002140": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002140",
+    "label_de": "Kompetenz (MV)",
+    "label_en": null,
+    "display_label": "Kompetenz (MV)"
+  },
+  "LP_0002141": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002141",
+    "label_de": "Anforderungsbereich (MV)",
+    "label_en": null,
+    "display_label": "Anforderungsbereich (MV)"
+  },
+  "LP_0002143": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002143",
+    "label_de": "Themenbereich (MV)",
+    "label_en": null,
+    "display_label": "Themenbereich (MV)"
+  },
+  "LP_0002144": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002144",
+    "label_de": "Verbindlicher Inhalt (MV)",
+    "label_en": null,
+    "display_label": "Verbindlicher Inhalt (MV)"
+  },
+  "LP_0002145": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002145",
+    "label_de": "Hinweis und Anregung (MV)",
+    "label_en": null,
+    "display_label": "Hinweis und Anregung (MV)"
+  },
+  "LP_0002147": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002147",
+    "label_de": "Thema (MV)",
+    "label_en": null,
+    "display_label": "Thema (MV)"
+  },
+  "LP_0002148": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002148",
+    "label_de": "Teilkompetenzbereich (MV)",
+    "label_en": null,
+    "display_label": "Teilkompetenzbereich (MV)"
+  },
+  "LP_0002149": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002149",
+    "label_de": "Möglichkeit der Verknüpfung (MV)",
+    "label_en": null,
+    "display_label": "Möglichkeit der Verknüpfung (MV)"
+  },
+  "LP_0002150": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002150",
+    "label_de": "Arbeitsbereich (MV)",
+    "label_en": null,
+    "display_label": "Arbeitsbereich (MV)"
+  },
+  "LP_0002151": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002151",
+    "label_de": "Konkretisierung (MV)",
+    "label_en": null,
+    "display_label": "Konkretisierung (MV)"
+  },
+  "LP_0002153": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002153",
+    "label_de": "KMK-Bildungsstandard (MV)",
+    "label_en": null,
+    "display_label": "KMK-Bildungsstandard (MV)"
+  },
+  "LP_0002154": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002154",
+    "label_de": "Teilkompetenzbereich (HB)",
+    "label_en": null,
+    "display_label": "Teilkompetenzbereich (HB)"
+  },
+  "LP_0002155": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002155",
+    "label_de": "Gegenstandsfeld (MV)",
+    "label_en": null,
+    "display_label": "Gegenstandsfeld (MV)"
+  },
+  "LP_0002158": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002158",
+    "label_de": "Verweisbeschreibungsfunktion",
+    "label_en": null,
+    "display_label": "Verweisbeschreibungsfunktion"
+  },
+  "LP_0002162": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002162",
+    "label_de": "Erläuterung (MV)",
+    "label_en": null,
+    "display_label": "Erläuterung (MV)"
+  },
+  "LP_0002163": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002163",
+    "label_de": "Beispiel Verknüpfung von Inhalt und Kompetenzbereich (MV)",
+    "label_en": null,
+    "display_label": "Beispiel Verknüpfung von Inhalt und Kompetenzbereich (MV)"
+  },
+  "LP_0002164": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002164",
+    "label_de": "Rahmenplan (MV)",
+    "label_en": null,
+    "display_label": "Rahmenplan (MV)"
+  },
+  "LP_0002169": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002169",
+    "label_de": "Bildungsstandard (HE)",
+    "label_en": null,
+    "display_label": "Bildungsstandard (HE)"
+  },
+  "LP_0002170": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002170",
+    "label_de": "Lerninhalt (HE)",
+    "label_en": null,
+    "display_label": "Lerninhalt (HE)"
+  },
+  "LP_0002171": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002171",
+    "label_de": "Domänenbezugsfunktion",
+    "label_en": null,
+    "display_label": "Domänenbezugsfunktion"
+  },
+  "LP_0002172": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002172",
+    "label_de": "beispielhafte Unterrichtsvorhaben (HB)",
+    "label_en": null,
+    "display_label": "beispielhafte Unterrichtsvorhaben (HB)"
+  },
+  "LP_0002174": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002174",
+    "label_de": "Lehrplanfragment (ST)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (ST)"
+  },
+  "LP_0002175": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002175",
+    "label_de": "Kompetenzbereich (ST)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (ST)"
+  },
+  "LP_0002177": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002177",
+    "label_de": "Kompetenz (ST)",
+    "label_en": null,
+    "display_label": "Kompetenz (ST)"
+  },
+  "LP_0002178": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002178",
+    "label_de": "Flexibel anwendbares Grundwissen (ST)",
+    "label_en": null,
+    "display_label": "Flexibel anwendbares Grundwissen (ST)"
+  },
+  "LP_0002179": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002179",
+    "label_de": "Grundlegender Wissensbestand (ST)",
+    "label_en": null,
+    "display_label": "Grundlegender Wissensbestand (ST)"
+  },
+  "LP_0002181": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002181",
+    "label_de": "Kompetenzschwerpunkt (ST)",
+    "label_en": null,
+    "display_label": "Kompetenzschwerpunkt (ST)"
+  },
+  "LP_0002182": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002182",
+    "label_de": "Gegenstandsfeld (ST)",
+    "label_en": null,
+    "display_label": "Gegenstandsfeld (ST)"
+  },
+  "LP_0002184": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002184",
+    "label_de": "Kerncurriculum (HE)",
+    "label_en": null,
+    "display_label": "Kerncurriculum (HE)"
+  },
+  "LP_0002186": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002186",
+    "label_de": "Lehrplanfragment (NW)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (NW)"
+  },
+  "LP_0002187": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002187",
+    "label_de": "Kompetenzbereich (NW)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (NW)"
+  },
+  "LP_0002188": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002188",
+    "label_de": "Kompetenzerwartung (NW)",
+    "label_en": null,
+    "display_label": "Kompetenzerwartung (NW)"
+  },
+  "LP_0002190": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002190",
+    "label_de": "Teilkompetenz (NW)",
+    "label_en": null,
+    "display_label": "Teilkompetenz (NW)"
+  },
+  "LP_0002191": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002191",
+    "label_de": "Inhaltsfeld (NW)",
+    "label_en": null,
+    "display_label": "Inhaltsfeld (NW)"
+  },
+  "LP_0002192": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002192",
+    "label_de": "Inhaltlicher Schwerpunkt (NW)",
+    "label_en": null,
+    "display_label": "Inhaltlicher Schwerpunkt (NW)"
+  },
+  "LP_0002193": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002193",
+    "label_de": "Sachgebiet (HB)",
+    "label_en": null,
+    "display_label": "Sachgebiet (HB)"
+  },
+  "LP_0002195": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002195",
+    "label_de": "Inhalt zum Erwerb der Kompetenzen (RP)",
+    "label_en": null,
+    "display_label": "Inhalt zum Erwerb der Kompetenzen (RP)"
+  },
+  "LP_0002196": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002196",
+    "label_de": "Leitidee (RP)",
+    "label_en": null,
+    "display_label": "Leitidee (RP)"
+  },
+  "LP_0002197": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002197",
+    "label_de": "Inhalt (RP)",
+    "label_en": null,
+    "display_label": "Inhalt (RP)"
+  },
+  "LP_0002198": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002198",
+    "label_de": "Hinweis und Vernetzung (RP)",
+    "label_en": null,
+    "display_label": "Hinweis und Vernetzung (RP)"
+  },
+  "LP_0002200": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002200",
+    "label_de": "Ziel / Inhalt (Sach- und Methodenkompetenz) (RP)",
+    "label_en": null,
+    "display_label": "Ziel / Inhalt (Sach- und Methodenkompetenz) (RP)"
+  },
+  "LP_0002201": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002201",
+    "label_de": "Hinweis zur Unterrichtsgestaltung und Methodenkompetenz (RP)",
+    "label_en": null,
+    "display_label": "Hinweis zur Unterrichtsgestaltung und Methodenkompetenz (RP)"
+  },
+  "LP_0002202": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002202",
+    "label_de": "Kernbereich (RP)",
+    "label_en": null,
+    "display_label": "Kernbereich (RP)"
+  },
+  "LP_0002203": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002203",
+    "label_de": "Kompetenzbereich (NI)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (NI)"
+  },
+  "LP_0002204": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002204",
+    "label_de": "Teilkompetenzbereich (NI)",
+    "label_en": null,
+    "display_label": "Teilkompetenzbereich (NI)"
+  },
+  "LP_0002205": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002205",
+    "label_de": "Kernkompetenzen (NI)",
+    "label_en": null,
+    "display_label": "Kernkompetenzen (NI)"
+  },
+  "LP_0002206": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002206",
+    "label_de": "Beispiel (NI)",
+    "label_en": null,
+    "display_label": "Beispiel (NI)"
+  },
+  "LP_0002207": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002207",
+    "label_de": "Umsetzung im Unterricht (NI)",
+    "label_en": null,
+    "display_label": "Umsetzung im Unterricht (NI)"
+  },
+  "LP_0002208": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002208",
+    "label_de": "Lernbereich (NI)",
+    "label_en": null,
+    "display_label": "Lernbereich (NI)"
+  },
+  "LP_0002209": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002209",
+    "label_de": "Thema (NI)",
+    "label_en": null,
+    "display_label": "Thema (NI)"
+  },
+  "LP_0002210": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002210",
+    "label_de": "Lehrplanfragment (HH)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (HH)"
+  },
+  "LP_0002211": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002211",
+    "label_de": "Leitidee (HH)",
+    "label_en": null,
+    "display_label": "Leitidee (HH)"
+  },
+  "LP_0002212": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002212",
+    "label_de": "Kompetenzbereich (HH)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (HH)"
+  },
+  "LP_0002214": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002214",
+    "label_de": "Beobachtungskriterium (HH)",
+    "label_en": null,
+    "display_label": "Beobachtungskriterium (HH)"
+  },
+  "LP_0002215": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002215",
+    "label_de": "Regelanforderung (HH)",
+    "label_en": null,
+    "display_label": "Regelanforderung (HH)"
+  },
+  "LP_0002218": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002218",
+    "label_de": "Thema (HH)",
+    "label_en": null,
+    "display_label": "Thema (HH)"
+  },
+  "LP_0002219": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002219",
+    "label_de": "Modul (HH)",
+    "label_en": null,
+    "display_label": "Modul (HH)"
+  },
+  "LP_0002220": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002220",
+    "label_de": "Sachgebiet (HH)",
+    "label_en": null,
+    "display_label": "Sachgebiet (HH)"
+  },
+  "LP_0002221": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002221",
+    "label_de": "Kompetenz (HH)",
+    "label_en": null,
+    "display_label": "Kompetenz (HH)"
+  },
+  "LP_0002223": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002223",
+    "label_de": "Lehrplanfragment (BB)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (BB)"
+  },
+  "LP_0002224": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002224",
+    "label_de": "Leitidee (BB)",
+    "label_en": null,
+    "display_label": "Leitidee (BB)"
+  },
+  "LP_0002225": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002225",
+    "label_de": "Eingangsvoraussetzung (BB)",
+    "label_en": null,
+    "display_label": "Eingangsvoraussetzung (BB)"
+  },
+  "LP_0002226": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002226",
+    "label_de": "Gegenstand (BB)",
+    "label_en": null,
+    "display_label": "Gegenstand (BB)"
+  },
+  "LP_0002227": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002227",
+    "label_de": "Unterrichtsanregung (BB)",
+    "label_en": null,
+    "display_label": "Unterrichtsanregung (BB)"
+  },
+  "LP_0002228": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002228",
+    "label_de": "Lernzeitbezogene Kompetenzerwartung (HE)",
+    "label_en": null,
+    "display_label": "Lernzeitbezogene Kompetenzerwartung (HE)"
+  },
+  "LP_0002229": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002229",
+    "label_de": "Lehrplanfragment (SL)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (SL)"
+  },
+  "LP_0002230": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002230",
+    "label_de": "Leitidee (SL)",
+    "label_en": null,
+    "display_label": "Leitidee (SL)"
+  },
+  "LP_0002232": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002232",
+    "label_de": "Kompetenzerwartung (SL)",
+    "label_en": null,
+    "display_label": "Kompetenzerwartung (SL)"
+  },
+  "LP_0002233": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002233",
+    "label_de": "Hinweis zur Umsetzung (SL)",
+    "label_en": null,
+    "display_label": "Hinweis zur Umsetzung (SL)"
+  },
+  "LP_0002234": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002234",
+    "label_de": "Themenfeld (SL)",
+    "label_en": null,
+    "display_label": "Themenfeld (SL)"
+  },
+  "LP_0002235": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002235",
+    "label_de": "Verbindliches Fachwissen (SL)",
+    "label_en": null,
+    "display_label": "Verbindliches Fachwissen (SL)"
+  },
+  "LP_0002238": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002238",
+    "label_de": "Verbindlicher Kompetenzschwerpunkt (SL)",
+    "label_en": null,
+    "display_label": "Verbindlicher Kompetenzschwerpunkt (SL)"
+  },
+  "LP_0002239": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002239",
+    "label_de": "Vorschlag und Hinweis (SL)",
+    "label_en": null,
+    "display_label": "Vorschlag und Hinweis (SL)"
+  },
+  "LP_0002240": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002240",
+    "label_de": "Basisbegriff (SL)",
+    "label_en": null,
+    "display_label": "Basisbegriff (SL)"
+  },
+  "LP_0002241": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002241",
+    "label_de": "Lernbereich (SL)",
+    "label_en": null,
+    "display_label": "Lernbereich (SL)"
+  },
+  "LP_0002243": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0002243",
+    "label_de": "Kompetenzbereich (SL)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (SL)"
+  },
+  "LP_0010001": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0010001",
+    "label_de": "Femdsprachenniveau",
+    "label_en": null,
+    "display_label": "Femdsprachenniveau"
+  },
+  "LP_0010002": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0010002",
+    "label_de": "A1 Anfänger",
+    "label_en": null,
+    "display_label": "A1 Anfänger"
+  },
+  "LP_0010003": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0010003",
+    "label_de": "A2 Grundlegende Kenntnisse",
+    "label_en": null,
+    "display_label": "A2 Grundlegende Kenntnisse"
+  },
+  "LP_0010004": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0010004",
+    "label_de": "B1 Fortgeschrittene Sprachverwendung",
+    "label_en": null,
+    "display_label": "B1 Fortgeschrittene Sprachverwendung"
+  },
+  "LP_0010005": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0010005",
+    "label_de": "B2 Selbständige Sprachverwendung",
+    "label_en": null,
+    "display_label": "B2 Selbständige Sprachverwendung"
+  },
+  "LP_0010006": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0010006",
+    "label_de": "C1 Fachkundige Sprachkenntnisse",
+    "label_en": null,
+    "display_label": "C1 Fachkundige Sprachkenntnisse"
+  },
+  "LP_0010007": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0010007",
+    "label_de": "C2 Annähernd muttersprachliche Kenntnisse",
+    "label_en": null,
+    "display_label": "C2 Annähernd muttersprachliche Kenntnisse"
+  },
+  "LP_0030001": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030001",
+    "label_de": "Themenfeld (BW)",
+    "label_en": null,
+    "display_label": "Themenfeld (BW)"
+  },
+  "LP_0030002": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030002",
+    "label_de": "Standard (BW)",
+    "label_en": null,
+    "display_label": "Standard (BW)"
+  },
+  "LP_0030003": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030003",
+    "label_de": "Beschreibung",
+    "label_en": null,
+    "display_label": "Beschreibung"
+  },
+  "LP_0030005": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030005",
+    "label_de": "Möglicher Inhalt (BE)",
+    "label_en": null,
+    "display_label": "Möglicher Inhalt (BE)"
+  },
+  "LP_0030006": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030006",
+    "label_de": "Kompetenzerwerb im Themenfeld (BE)",
+    "label_en": null,
+    "display_label": "Kompetenzerwerb im Themenfeld (BE)"
+  },
+  "LP_0030007": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030007",
+    "label_de": "Kompetenzerwerb im Themenfeld (BB)",
+    "label_en": null,
+    "display_label": "Kompetenzerwerb im Themenfeld (BB)"
+  },
+  "LP_0030008": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030008",
+    "label_de": "Möglicher Inhalt (BB)",
+    "label_en": null,
+    "display_label": "Möglicher Inhalt (BB)"
+  },
+  "LP_0030009": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030009",
+    "label_de": "Anforderung (HH)",
+    "label_en": null,
+    "display_label": "Anforderung (HH)"
+  },
+  "LP_0030010": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030010",
+    "label_de": "Fachniveau Sek II (SH)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (SH)"
+  },
+  "LP_0030011": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030011",
+    "label_de": "Teilkompetenzbereich (SH)",
+    "label_en": null,
+    "display_label": "Teilkompetenzbereich (SH)"
+  },
+  "LP_0030012": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030012",
+    "label_de": "Kompetenz (SH)",
+    "label_en": null,
+    "display_label": "Kompetenz (SH)"
+  },
+  "LP_0030013": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030013",
+    "label_de": "Verbindliche Themen und Inhalte (SH)",
+    "label_en": null,
+    "display_label": "Verbindliche Themen und Inhalte (SH)"
+  },
+  "LP_0030014": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030014",
+    "label_de": "Vorgaben und Hinweise (SH)",
+    "label_en": null,
+    "display_label": "Vorgaben und Hinweise (SH)"
+  },
+  "LP_0030015": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030015",
+    "label_de": "Themen und Inhalte des Unterrichts (SH)",
+    "label_en": null,
+    "display_label": "Themen und Inhalte des Unterrichts (SH)"
+  },
+  "LP_0030016": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030016",
+    "label_de": "mathematische Leitidee (SH)",
+    "label_en": null,
+    "display_label": "mathematische Leitidee (SH)"
+  },
+  "LP_0030017": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030017",
+    "label_de": "Sachgebiet (SH)",
+    "label_en": null,
+    "display_label": "Sachgebiet (SH)"
+  },
+  "LP_0030018": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030018",
+    "label_de": "KMK-Bildungsstandards (SH)",
+    "label_en": null,
+    "display_label": "KMK-Bildungsstandards (SH)"
+  },
+  "LP_0030019": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030019",
+    "label_de": "Konkretisierung - Hinweis und Vorschlag (SH)",
+    "label_en": null,
+    "display_label": "Konkretisierung - Hinweis und Vorschlag (SH)"
+  },
+  "LP_0030020": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030020",
+    "label_de": "Textsorte (SH)",
+    "label_en": null,
+    "display_label": "Textsorte (SH)"
+  },
+  "LP_0030021": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030021",
+    "label_de": "Inhalte und Wissbestände (SH)",
+    "label_en": null,
+    "display_label": "Inhalte und Wissbestände (SH)"
+  },
+  "LP_0030022": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030022",
+    "label_de": "Konkretisierung (SH)",
+    "label_en": null,
+    "display_label": "Konkretisierung (SH)"
+  },
+  "LP_0030023": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030023",
+    "label_de": "Themenvorschlag (SH)",
+    "label_en": null,
+    "display_label": "Themenvorschlag (SH)"
+  },
+  "LP_0030024": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030024",
+    "label_de": "Lernbereich (TH)",
+    "label_en": null,
+    "display_label": "Lernbereich (TH)"
+  },
+  "LP_0030025": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030025",
+    "label_de": "Kompetenzbereich (TH)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (TH)"
+  },
+  "LP_0030026": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030026",
+    "label_de": "Kompetenz (TH)",
+    "label_en": null,
+    "display_label": "Kompetenz (TH)"
+  },
+  "LP_0030027": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030027",
+    "label_de": "Erfahrungbereich (RP)",
+    "label_en": null,
+    "display_label": "Erfahrungbereich (RP)"
+  },
+  "LP_0030028": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030028",
+    "label_de": "Lehrplanfragment (TH)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (TH)"
+  },
+  "LP_0030029": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030029",
+    "label_de": "Thema (TH)",
+    "label_en": null,
+    "display_label": "Thema (TH)"
+  },
+  "LP_0030030": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030030",
+    "label_de": "Themenfeld (RP)",
+    "label_en": null,
+    "display_label": "Themenfeld (RP)"
+  },
+  "LP_0030031": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030031",
+    "label_de": "Inhalte (TH)",
+    "label_en": null,
+    "display_label": "Inhalte (TH)"
+  },
+  "LP_0030032": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030032",
+    "label_de": "Schwerpunkte (TH)",
+    "label_en": null,
+    "display_label": "Schwerpunkte (TH)"
+  },
+  "LP_0030033": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030033",
+    "label_de": "Lehrplanfragment (SH)",
+    "label_en": null,
+    "display_label": "Lehrplanfragment (SH)"
+  },
+  "LP_0030034": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030034",
+    "label_de": "Thematischer Leitgedanke (RP)",
+    "label_en": null,
+    "display_label": "Thematischer Leitgedanke (RP)"
+  },
+  "LP_0030035": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030035",
+    "label_de": "Lernbereich (RP)",
+    "label_en": null,
+    "display_label": "Lernbereich (RP)"
+  },
+  "LP_0030036": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030036",
+    "label_de": "Fähigkeit (RP)",
+    "label_en": null,
+    "display_label": "Fähigkeit (RP)"
+  },
+  "LP_0030037": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030037",
+    "label_de": "Schwerpunktsetzung (HE)",
+    "label_en": null,
+    "display_label": "Schwerpunktsetzung (HE)"
+  },
+  "LP_0030038": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030038",
+    "label_de": "Themenfeld (HE)",
+    "label_en": null,
+    "display_label": "Themenfeld (HE)"
+  },
+  "LP_0030039": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030039",
+    "label_de": "Bildungsgangniveau (HE)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (HE)"
+  },
+  "LP_0030041": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030041",
+    "label_de": "Bildungsgangniveau (NW)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (NW)"
+  },
+  "LP_0030042": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030042",
+    "label_de": "Standard (MV)",
+    "label_en": null,
+    "display_label": "Standard (MV)"
+  },
+  "LP_0030043": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030043",
+    "label_de": "Sprachfunktion (MV)",
+    "label_en": null,
+    "display_label": "Sprachfunktion (MV)"
+  },
+  "LP_0030044": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030044",
+    "label_de": "Mögliches Sprachmittel (MV)",
+    "label_en": null,
+    "display_label": "Mögliches Sprachmittel (MV)"
+  },
+  "LP_0030045": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030045",
+    "label_de": "Inhalt (MV)",
+    "label_en": null,
+    "display_label": "Inhalt (MV)"
+  },
+  "LP_0030047": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030047",
+    "label_de": "Unterrichtsinhalt (MV)",
+    "label_en": null,
+    "display_label": "Unterrichtsinhalt (MV)"
+  },
+  "LP_0030048": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030048",
+    "label_de": "Verbindliches Ziel (MV)",
+    "label_en": null,
+    "display_label": "Verbindliches Ziel (MV)"
+  },
+  "LP_0030049": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030049",
+    "label_de": "Abschlussbezogener Standard (MV)",
+    "label_en": null,
+    "display_label": "Abschlussbezogener Standard (MV)"
+  },
+  "LP_0030050": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030050",
+    "label_de": "Allgemeines fachliches Ziel (SN)",
+    "label_en": null,
+    "display_label": "Allgemeines fachliches Ziel (SN)"
+  },
+  "LP_0030052": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030052",
+    "label_de": "Fachspezifische Kompetenz (MV)",
+    "label_en": null,
+    "display_label": "Fachspezifische Kompetenz (MV)"
+  },
+  "LP_0030053": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030053",
+    "label_de": "Bildungsgangniveau (BY)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (BY)"
+  },
+  "LP_0030054": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030054",
+    "label_de": "Leitidee (MV)",
+    "label_en": null,
+    "display_label": "Leitidee (MV)"
+  },
+  "LP_0030055": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030055",
+    "label_de": "Fachniveau Sek II (NI)",
+    "label_en": null,
+    "display_label": "Fachniveau Sek II (NI)"
+  },
+  "LP_0030058": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030058",
+    "label_de": "Aufgabenstellung (SL)",
+    "label_en": null,
+    "display_label": "Aufgabenstellung (SL)"
+  },
+  "LP_0030059": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030059",
+    "label_de": "Kompetenz und Inhalt (SL)",
+    "label_en": null,
+    "display_label": "Kompetenz und Inhalt (SL)"
+  },
+  "LP_0030060": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030060",
+    "label_de": "Literaturhinweis (SL)",
+    "label_en": null,
+    "display_label": "Literaturhinweis (SL)"
+  },
+  "LP_0030061": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030061",
+    "label_de": "Verbindliche Formen mündlicher Kommunikation (SL)",
+    "label_en": null,
+    "display_label": "Verbindliche Formen mündlicher Kommunikation (SL)"
+  },
+  "LP_0030062": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030062",
+    "label_de": "Verbindliche fachspezifische Fertigkeiten/Fähigkeiten und fachspezifische Methoden (SL)",
+    "label_en": null,
+    "display_label": "Verbindliche fachspezifische Fertigkeiten/Fähigkeiten und fachspezifische Methoden (SL)"
+  },
+  "LP_0030063": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030063",
+    "label_de": "Verbindlicher Lerngegenstand (SL)",
+    "label_en": null,
+    "display_label": "Verbindlicher Lerngegenstand (SL)"
+  },
+  "LP_0030064": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030064",
+    "label_de": "Vorschlag und Hinweis zu Inhalten und Methoden (SL)",
+    "label_en": null,
+    "display_label": "Vorschlag und Hinweis zu Inhalten und Methoden (SL)"
+  },
+  "LP_0030065": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030065",
+    "label_de": "CE-Verweis",
+    "label_en": null,
+    "display_label": "CE-Verweis"
+  },
+  "LP_0030066": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030066",
+    "label_de": "Vertiefungsmöglichkeit (BB)",
+    "label_en": null,
+    "display_label": "Vertiefungsmöglichkeit (BB)"
+  },
+  "LP_0030067": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030067",
+    "label_de": "Inhaltsbereich (SH)",
+    "label_en": null,
+    "display_label": "Inhaltsbereich (SH)"
+  },
+  "LP_0030068": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030068",
+    "label_de": "Vertiefungsmöglichkeit (BE)",
+    "label_en": null,
+    "display_label": "Vertiefungsmöglichkeit (BE)"
+  },
+  "LP_0030069": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030069",
+    "label_de": "Thema (BW)",
+    "label_en": null,
+    "display_label": "Thema (BW)"
+  },
+  "LP_0030070": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030070",
+    "label_de": "Kompetenzbereich (SH)",
+    "label_en": null,
+    "display_label": "Kompetenzbereich (SH)"
+  },
+  "LP_0030073": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030073",
+    "label_de": "Bereich (NW)",
+    "label_en": null,
+    "display_label": "Bereich (NW)"
+  },
+  "LP_0030074": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030074",
+    "label_de": "Fachliche Konkretisierung (NW)",
+    "label_en": null,
+    "display_label": "Fachliche Konkretisierung (NW)"
+  },
+  "LP_0030075": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030075",
+    "label_de": "Inhalt (NW)",
+    "label_en": null,
+    "display_label": "Inhalt (NW)"
+  },
+  "LP_0030076": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030076",
+    "label_de": "Möglicher Kontext (NW)",
+    "label_en": null,
+    "display_label": "Möglicher Kontext (NW)"
+  },
+  "LP_0030077": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030077",
+    "label_de": "Basiskonzept (NW)",
+    "label_en": null,
+    "display_label": "Basiskonzept (NW)"
+  },
+  "LP_0030078": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030078",
+    "label_de": "Themenbereich (ST)",
+    "label_en": null,
+    "display_label": "Themenbereich (ST)"
+  },
+  "LP_0030079": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030079",
+    "label_de": "Inhalt und Gegenstand der Kommunikation (ST)",
+    "label_en": null,
+    "display_label": "Inhalt und Gegenstand der Kommunikation (ST)"
+  },
+  "LP_0030080": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030080",
+    "label_de": "Bildungsgangniveau (NI)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (NI)"
+  },
+  "LP_0030081": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030081",
+    "label_de": "Flexibel anwendbares Grundwissen zu sprachlichen Mitteln (ST)",
+    "label_en": null,
+    "display_label": "Flexibel anwendbares Grundwissen zu sprachlichen Mitteln (ST)"
+  },
+  "LP_0030082": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030082",
+    "label_de": "Inhaltsbezogene Kompetenz (ST)",
+    "label_en": null,
+    "display_label": "Inhaltsbezogene Kompetenz (ST)"
+  },
+  "LP_0030083": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030083",
+    "label_de": "Prozessbezogene Kompetenz (ST)",
+    "label_en": null,
+    "display_label": "Prozessbezogene Kompetenz (ST)"
+  },
+  "LP_0030084": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030084",
+    "label_de": "Wissensbestand (ST)",
+    "label_en": null,
+    "display_label": "Wissensbestand (ST)"
+  },
+  "LP_0030085": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030085",
+    "label_de": "Sprachliches Mittel (ST)",
+    "label_en": null,
+    "display_label": "Sprachliches Mittel (ST)"
+  },
+  "LP_0030086": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030086",
+    "label_de": "Soziokulturelles Orientierungswissen (ST)",
+    "label_en": null,
+    "display_label": "Soziokulturelles Orientierungswissen (ST)"
+  },
+  "LP_0030087": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030087",
+    "label_de": "Bereich (ST)",
+    "label_en": null,
+    "display_label": "Bereich (ST)"
+  },
+  "LP_0030088": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030088",
+    "label_de": "Bezug zu fächerübergreifenden Themen (ST)",
+    "label_en": null,
+    "display_label": "Bezug zu fächerübergreifenden Themen (ST)"
+  },
+  "LP_0030089": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030089",
+    "label_de": "Verbindliches Schülerexperiment (ST)",
+    "label_en": null,
+    "display_label": "Verbindliches Schülerexperiment (ST)"
+  },
+  "LP_0030090": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030090",
+    "label_de": "Kommunikativer Inhalt (ST)",
+    "label_en": null,
+    "display_label": "Kommunikativer Inhalt (ST)"
+  },
+  "LP_0030091": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030091",
+    "label_de": "Bildungsgangniveau (SH)",
+    "label_en": null,
+    "display_label": "Bildungsgangniveau (SH)"
+  },
+  "LP_0030092": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030092",
+    "label_de": "Themenbereich (SL)",
+    "label_en": null,
+    "display_label": "Themenbereich (SL)"
+  },
+  "LP_0030093": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030093",
+    "label_de": "Sprachanlass (SL)",
+    "label_en": null,
+    "display_label": "Sprachanlass (SL)"
+  },
+  "LP_0030094": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030094",
+    "label_de": "Redemittel (SL)",
+    "label_en": null,
+    "display_label": "Redemittel (SL)"
+  },
+  "LP_0030095": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030095",
+    "label_de": "Kompetenz (SL)",
+    "label_en": null,
+    "display_label": "Kompetenz (SL)"
+  },
+  "LP_0030096": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030096",
+    "label_de": "Inhaltsbereich (ST)",
+    "label_en": null,
+    "display_label": "Inhaltsbereich (ST)"
+  },
+  "LP_0030097": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030097",
+    "label_de": "Ziel (TH)",
+    "label_en": null,
+    "display_label": "Ziel (TH)"
+  },
+  "LP_0030098": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030098",
+    "label_de": "Lehrplanbaustein (RP)",
+    "label_en": null,
+    "display_label": "Lehrplanbaustein (RP)"
+  },
+  "LP_0030099": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030099",
+    "label_de": "Hinweis zur unterrichtlichen Umsetzung (RP)",
+    "label_en": null,
+    "display_label": "Hinweis zur unterrichtlichen Umsetzung (RP)"
+  },
+  "LP_0030100": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030100",
+    "label_de": "Inhalt und Zusammenhang (RP)",
+    "label_en": null,
+    "display_label": "Inhalt und Zusammenhang (RP)"
+  },
+  "LP_0030101": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030101",
+    "label_de": "Teilkompetenzbereich (RP)",
+    "label_en": null,
+    "display_label": "Teilkompetenzbereich (RP)"
+  },
+  "LP_0030102": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030102",
+    "label_de": "Teilteilkompetenzbereich (RP)",
+    "label_en": null,
+    "display_label": "Teilteilkompetenzbereich (RP)"
+  },
+  "LP_0030103": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030103",
+    "label_de": "Anwendungsfähiges Wissen (RP)",
+    "label_en": null,
+    "display_label": "Anwendungsfähiges Wissen (RP)"
+  },
+  "LP_0030104": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030104",
+    "label_de": "Teilleitgedanke (RP)",
+    "label_en": null,
+    "display_label": "Teilleitgedanke (RP)"
+  },
+  "LP_0030105": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030105",
+    "label_de": "Teillernbereich (RP)",
+    "label_en": null,
+    "display_label": "Teillernbereich (RP)"
+  },
+  "LP_0030106": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030106",
+    "label_de": "Teilteillernbereich (RP)",
+    "label_en": null,
+    "display_label": "Teilteillernbereich (RP)"
+  },
+  "LP_0030107": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030107",
+    "label_de": "Teilerfahrungsberich (RP)",
+    "label_en": null,
+    "display_label": "Teilerfahrungsberich (RP)"
+  },
+  "LP_0030108": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030108",
+    "label_de": "Fachbegriff (RP)",
+    "label_en": null,
+    "display_label": "Fachbegriff (RP)"
+  },
+  "LP_0030109": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030109",
+    "label_de": "Entwicklung des Konzepts (RP)",
+    "label_en": null,
+    "display_label": "Entwicklung des Konzepts (RP)"
+  },
+  "LP_0030110": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030110",
+    "label_de": "Kontext (RP)",
+    "label_en": null,
+    "display_label": "Kontext (RP)"
+  },
+  "LP_0030111": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030111",
+    "label_de": "Beitrag zur Entwicklung der Basiskonzepte (RP)",
+    "label_en": null,
+    "display_label": "Beitrag zur Entwicklung der Basiskonzepte (RP)"
+  },
+  "LP_0030112": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030112",
+    "label_de": "Erschließung des Themenfeldes durch Kontextorientierung (RP)",
+    "label_en": null,
+    "display_label": "Erschließung des Themenfeldes durch Kontextorientierung (RP)"
+  },
+  "LP_0030113": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030113",
+    "label_de": "Differenzierungsmöglichkeit (RP)",
+    "label_en": null,
+    "display_label": "Differenzierungsmöglichkeit (RP)"
+  },
+  "LP_0030114": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030114",
+    "label_de": "Experiment (BW)",
+    "label_en": null,
+    "display_label": "Experiment (BW)"
+  },
+  "LP_0030115": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030115",
+    "label_de": "Bezug zu den Basiskonzepten (BE)",
+    "label_en": null,
+    "display_label": "Bezug zu den Basiskonzepten (BE)"
+  },
+  "LP_0030116": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030116",
+    "label_de": "Möglicher Kontext (BE)",
+    "label_en": null,
+    "display_label": "Möglicher Kontext (BE)"
+  },
+  "LP_0030117": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030117",
+    "label_de": "Fachbegriff (BE)",
+    "label_en": null,
+    "display_label": "Fachbegriff (BE)"
+  },
+  "LP_0030118": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030118",
+    "label_de": "Beispiel für Differenzierungsmöglichkeiten (BE)",
+    "label_en": null,
+    "display_label": "Beispiel für Differenzierungsmöglichkeiten (BE)"
+  },
+  "LP_0030119": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030119",
+    "label_de": "Experiment/Untersuchung (BE)",
+    "label_en": null,
+    "display_label": "Experiment/Untersuchung (BE)"
+  },
+  "LP_0030120": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030120",
+    "label_de": "Technik (BE)",
+    "label_en": null,
+    "display_label": "Technik (BE)"
+  },
+  "LP_0030121": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030121",
+    "label_de": "Experiment (BE)",
+    "label_en": null,
+    "display_label": "Experiment (BE)"
+  },
+  "LP_0030122": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030122",
+    "label_de": "Fachmethode (BE)",
+    "label_en": null,
+    "display_label": "Fachmethode (BE)"
+  },
+  "LP_0030123": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030123",
+    "label_de": "Basiskonzept (BE)",
+    "label_en": null,
+    "display_label": "Basiskonzept (BE)"
+  },
+  "LP_0030124": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030124",
+    "label_de": "Beispiel für Unterrichtseinheiten (BE)",
+    "label_en": null,
+    "display_label": "Beispiel für Unterrichtseinheiten (BE)"
+  },
+  "LP_0030125": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030125",
+    "label_de": "Weiterer Kontext (BE)",
+    "label_en": null,
+    "display_label": "Weiterer Kontext (BE)"
+  },
+  "LP_0030126": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030126",
+    "label_de": "Verfügung über sprachliche Mittel (SL)",
+    "label_en": null,
+    "display_label": "Verfügung über sprachliche Mittel (SL)"
+  },
+  "LP_0030127": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030127",
+    "label_de": "Inhalt und Thema (SL)",
+    "label_en": null,
+    "display_label": "Inhalt und Thema (SL)"
+  },
+  "LP_0030128": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030128",
+    "label_de": "Beispiel (SL)",
+    "label_en": null,
+    "display_label": "Beispiel (SL)"
+  },
+  "LP_0030129": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030129",
+    "label_de": "Methodenkompetenzen/Lern- und Kommunikationsstrategien (SL)",
+    "label_en": null,
+    "display_label": "Methodenkompetenzen/Lern- und Kommunikationsstrategien (SL)"
+  },
+  "LP_0030130": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030130",
+    "label_de": "Orientierungswissen (SL)",
+    "label_en": null,
+    "display_label": "Orientierungswissen (SL)"
+  },
+  "LP_0030131": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030131",
+    "label_de": "Begegnungssituatonen (SL)",
+    "label_en": null,
+    "display_label": "Begegnungssituatonen (SL)"
+  },
+  "LP_0030132": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030132",
+    "label_de": "Einstellungen (SL)",
+    "label_en": null,
+    "display_label": "Einstellungen (SL)"
+  },
+  "LP_0030133": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030133",
+    "label_de": "Relevante Genres (SL)",
+    "label_en": null,
+    "display_label": "Relevante Genres (SL)"
+  },
+  "LP_0030134": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030134",
+    "label_de": "Wortschatz (SL)",
+    "label_en": null,
+    "display_label": "Wortschatz (SL)"
+  },
+  "LP_0030135": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030135",
+    "label_de": "Geeignete Methoden / Anlässe für das exemplarische Arbeiten (SL)",
+    "label_en": null,
+    "display_label": "Geeignete Methoden / Anlässe für das exemplarische Arbeiten (SL)"
+  },
+  "LP_0030136": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030136",
+    "label_de": "Hinweise für die Konzeption von Lernaufgaben mit IK-Schwerpunkt  (SL)",
+    "label_en": null,
+    "display_label": "Hinweise für die Konzeption von Lernaufgaben mit IK-Schwerpunkt  (SL)"
+  },
+  "LP_0030137": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030137",
+    "label_de": "Mögliche Sprecharrangements und Genres (SL)",
+    "label_en": null,
+    "display_label": "Mögliche Sprecharrangements und Genres (SL)"
+  },
+  "LP_0030138": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030138",
+    "label_de": "Literatur und Film im Unterricht der Hauptphase (SL)",
+    "label_en": null,
+    "display_label": "Literatur und Film im Unterricht der Hauptphase (SL)"
+  },
+  "LP_0030139": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030139",
+    "label_de": "Themenkomplex (SL)",
+    "label_en": null,
+    "display_label": "Themenkomplex (SL)"
+  },
+  "LP_0030140": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030140",
+    "label_de": "Verbindlicher Inhalt (SL)",
+    "label_en": null,
+    "display_label": "Verbindlicher Inhalt (SL)"
+  },
+  "LP_0030141": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030141",
+    "label_de": "Vorgaben zum Erwerb von Methodenkompetenz (SL)",
+    "label_en": null,
+    "display_label": "Vorgaben zum Erwerb von Methodenkompetenz (SL)"
+  },
+  "LP_0030142": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030142",
+    "label_de": "Basiskonzept (SL)",
+    "label_en": null,
+    "display_label": "Basiskonzept (SL)"
+  },
+  "LP_0030143": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030143",
+    "label_de": "Standard für den Kompetenzbereich Fachwissen (SL)",
+    "label_en": null,
+    "display_label": "Standard für den Kompetenzbereich Fachwissen (SL)"
+  },
+  "LP_0030144": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030144",
+    "label_de": "Themenbereich (HH)",
+    "label_en": null,
+    "display_label": "Themenbereich (HH)"
+  },
+  "LP_0030145": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030145",
+    "label_de": "Verwendung von Lehrwerken (SL)",
+    "label_en": null,
+    "display_label": "Verwendung von Lehrwerken (SL)"
+  },
+  "LP_0030146": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030146",
+    "label_de": "Möglicher Einstieg / Motivation / Kontext (SL)",
+    "label_en": null,
+    "display_label": "Möglicher Einstieg / Motivation / Kontext (SL)"
+  },
+  "LP_0030147": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030147",
+    "label_de": "Zusammenarbeit mit anderen Fächern (SL)",
+    "label_en": null,
+    "display_label": "Zusammenarbeit mit anderen Fächern (SL)"
+  },
+  "LP_0030148": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030148",
+    "label_de": "Außerschulische Lernorte und außerunterrichtliche Veranstaltungen (SL)",
+    "label_en": null,
+    "display_label": "Außerschulische Lernorte und außerunterrichtliche Veranstaltungen (SL)"
+  },
+  "LP_0030149": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030149",
+    "label_de": "Berufsorientierender Aspekt (SL)",
+    "label_en": null,
+    "display_label": "Berufsorientierender Aspekt (SL)"
+  },
+  "LP_0030150": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030150",
+    "label_de": "Unterstützungsangebote (SL)",
+    "label_en": null,
+    "display_label": "Unterstützungsangebote (SL)"
+  },
+  "LP_0030151": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030151",
+    "label_de": "Prozessbezogene Kompetenz (SL)",
+    "label_en": null,
+    "display_label": "Prozessbezogene Kompetenz (SL)"
+  },
+  "LP_0030152": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030152",
+    "label_de": "Hinweis zum sprachsensiblen Fachunterricht (SL)",
+    "label_en": null,
+    "display_label": "Hinweis zum sprachsensiblen Fachunterricht (SL)"
+  },
+  "LP_0030153": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030153",
+    "label_de": "Allgemeiner Hinweis (SL)",
+    "label_en": null,
+    "display_label": "Allgemeiner Hinweis (SL)"
+  },
+  "LP_0030154": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030154",
+    "label_de": "Fachübergreifende und fächerverbindende Bezüge (SL)",
+    "label_en": null,
+    "display_label": "Fachübergreifende und fächerverbindende Bezüge (SL)"
+  },
+  "LP_0030155": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030155",
+    "label_de": "Geeignetes (Schüler-)Experiment (SL)",
+    "label_en": null,
+    "display_label": "Geeignetes (Schüler-)Experiment (SL)"
+  },
+  "LP_0030156": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030156",
+    "label_de": "Projekte (SL)",
+    "label_en": null,
+    "display_label": "Projekte (SL)"
+  },
+  "LP_0030157": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030157",
+    "label_de": "Sach-, Erkenntnisgewinnungs-, Kommunikations- und Bewertungskompetenz (SL)",
+    "label_en": null,
+    "display_label": "Sach-, Erkenntnisgewinnungs-, Kommunikations- und Bewertungskompetenz (SL)"
+  },
+  "LP_0030158": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030158",
+    "label_de": "Bildung für nachhaltige Entwicklung (SL)",
+    "label_en": null,
+    "display_label": "Bildung für nachhaltige Entwicklung (SL)"
+  },
+  "LP_0030159": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030159",
+    "label_de": "Medienbildung (SL)",
+    "label_en": null,
+    "display_label": "Medienbildung (SL)"
+  },
+  "LP_0030160": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030160",
+    "label_de": "Zur Unterrichtsgestaltung (SL)",
+    "label_en": null,
+    "display_label": "Zur Unterrichtsgestaltung (SL)"
+  },
+  "LP_0030161": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030161",
+    "label_de": "Zu Methoden und Arbeitstechniken (SL)",
+    "label_en": null,
+    "display_label": "Zu Methoden und Arbeitstechniken (SL)"
+  },
+  "LP_0030162": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030162",
+    "label_de": "Methodik und Fachdidaktik (SL)",
+    "label_en": null,
+    "display_label": "Methodik und Fachdidaktik (SL)"
+  },
+  "LP_0030163": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030163",
+    "label_de": "Einsatz digitaler Mathematikwerkzeuge (SL)",
+    "label_en": null,
+    "display_label": "Einsatz digitaler Mathematikwerkzeuge (SL)"
+  },
+  "LP_0030164": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030164",
+    "label_de": "Thematische Querverbindungen im Lehrplan (SL)",
+    "label_en": null,
+    "display_label": "Thematische Querverbindungen im Lehrplan (SL)"
+  },
+  "LP_0030165": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030165",
+    "label_de": "Leitgedanke (HH)",
+    "label_en": null,
+    "display_label": "Leitgedanke (HH)"
+  },
+  "LP_0030166": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030166",
+    "label_de": "Beitrag zur Leitperspektive (HH)",
+    "label_en": null,
+    "display_label": "Beitrag zur Leitperspektive (HH)"
+  },
+  "LP_0030167": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030167",
+    "label_de": "Übergreifend (HH)",
+    "label_en": null,
+    "display_label": "Übergreifend (HH)"
+  },
+  "LP_0030168": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030168",
+    "label_de": "Fachbezogen (HH)",
+    "label_en": null,
+    "display_label": "Fachbezogen (HH)"
+  },
+  "LP_0030169": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030169",
+    "label_de": "Redemittel und grammatische Grundlagen (HH)",
+    "label_en": null,
+    "display_label": "Redemittel und grammatische Grundlagen (HH)"
+  },
+  "LP_0030170": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030170",
+    "label_de": "Basisgrammatik (HH)",
+    "label_en": null,
+    "display_label": "Basisgrammatik (HH)"
+  },
+  "LP_0030171": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030171",
+    "label_de": "Fachperspektive (HH)",
+    "label_en": null,
+    "display_label": "Fachperspektive (HH)"
+  },
+  "LP_0030172": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030172",
+    "label_de": "Bildungsstandard (HH)",
+    "label_en": null,
+    "display_label": "Bildungsstandard (HH)"
+  },
+  "LP_0030173": {
+    "uri": "https://w3id.org/lehrplan/ontology/LP_0030173",
+    "label_de": "Basiskonzept (HH)",
+    "label_en": null,
+    "display_label": "Basiskonzept (HH)"
+  }
+}
