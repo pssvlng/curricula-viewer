@@ -14,6 +14,9 @@ from virtuoso import storeDataToGraph, storeDataToGraphInBatches
 app = Flask(__name__)
 CORS(app)
 
+# Configure maximum upload size (1GB)
+app.config['MAX_CONTENT_LENGTH'] = 1024 * 1024 * 1024  # 1GB in bytes
+
 # Upload Job Management
 @dataclass
 class UploadJob:
@@ -126,7 +129,28 @@ def get_upload_status(job_id):
     # Convert datetime to string for JSON serialization
     job_data['timestamp'] = job.timestamp.isoformat()
     
+    # Add analysis progress if available
+    if job.status == 'processing':
+        analysis_prog = get_analysis_progress(job_id)
+        job_data['analysisProgress'] = analysis_prog
+    
     return jsonify(job_data)
+
+@app.route('/upload/analysis_progress/<job_id>', methods=['GET'])
+def get_upload_analysis_progress(job_id):
+    """Get analysis progress for a job"""
+    job = get_job(job_id)
+    if not job:
+        return jsonify({"error": "Job not found"}), 404
+    
+    analysis_prog = get_analysis_progress(job_id)
+    return jsonify({
+        "jobId": job_id,
+        "uploadComplete": job.progress >= 100.0,
+        "analysisProgress": analysis_prog['progress'],
+        "analysisStatus": analysis_prog['status'],
+        "overallStatus": job.status
+    })
 
 @app.route('/upload/jobs', methods=['GET'])
 def get_all_jobs():
@@ -139,6 +163,44 @@ def get_all_jobs():
             jobs_data.append(job_data)
     
     return jsonify(jobs_data)
+
+@app.route('/upload/complete/<job_id>', methods=['POST'])
+def force_complete_job(job_id):
+    """Force complete a stuck job (emergency endpoint)"""
+    try:
+        job = get_job(job_id)
+        if not job:
+            return jsonify({"error": "Job not found"}), 404
+        
+        if job.status != 'processing':
+            return jsonify({"error": "Job is not in processing state"}), 400
+        
+        # Create minimal result data for stuck job
+        minimal_result = [{
+            'label': 'Summary',
+            'content': f'Upload completed with {job.total_triples} triples.\nData analysis was skipped due to timeout.',
+            'type': 'summary',
+            'uploadInfo': {
+                'status': 'Erfolgreich (Timeout)',
+                'message': 'TTL file uploaded successfully, analysis incomplete',
+                'federalState': job.federal_state,
+                'graphId': job.federal_state,
+                'triplesCount': job.total_triples,
+                'sparqlEndpoint': SPARQL_ENDPOINT
+            }
+        }]
+        
+        # Mark job as completed
+        complete_job(job_id, minimal_result)
+        
+        return jsonify({
+            "success": True,
+            "message": "Job marked as completed",
+            "jobId": job_id
+        })
+        
+    except Exception as e:
+        return jsonify({"error": f"Failed to complete job: {str(e)}"}), 500
 
 def process_upload_async(job_id: str, graph: Graph, federal_state: str):
     """Process upload in background with progress updates"""
@@ -171,8 +233,8 @@ def process_upload_async(job_id: str, graph: Graph, federal_state: str):
         
         print(f"Upload completed for job {job_id}, analyzing data...")
         
-        # Analyze the uploaded data
-        result_data = analyze_uploaded_data(graph, federal_state, graph_uri, sparql_endpoint)
+        # Analyze the uploaded data with progress tracking
+        result_data = analyze_uploaded_data_optimized(graph, federal_state, graph_uri, sparql_endpoint, job_id)
         
         # Mark job as completed
         complete_job(job_id, result_data)
@@ -183,12 +245,12 @@ def process_upload_async(job_id: str, graph: Graph, federal_state: str):
         print(f"Error processing job {job_id}: {str(e)}")
         fail_job(job_id, str(e))
 
-def analyze_uploaded_data(graph, federal_state, graph_name, sparql_endpoint):
-    """Analyze the uploaded TTL data and create tabs for different classes"""
+def analyze_uploaded_data_optimized(graph, federal_state, graph_name, sparql_endpoint, job_id):
+    """Analyze the uploaded TTL data efficiently for large files"""
     tabs = []
-    
-    # Summary tab with upload results and analysis
     total_triples = len(graph)
+    
+    print(f"Starting optimized analysis for {total_triples} triples...")
     
     # Create structured upload info for better formatting in frontend
     upload_info = {
@@ -205,20 +267,44 @@ def analyze_uploaded_data(graph, federal_state, graph_name, sparql_endpoint):
     class_instances = {}
     all_classes_found = set()
     
-    print(f"Analyzing {total_triples} triples...")
+    # Get all type triples first (more efficient than iterating all triples)
+    print("Extracting type assertions...")
+    type_triples = []
+    processed_count = 0
     
     for subj, pred, obj in graph:
         if pred == RDF.type:
-            class_uri = str(obj)
-            all_classes_found.add(class_uri)
-            
-            if class_uri in URI_TO_CLASS:
-                if class_uri not in class_instances:
-                    class_instances[class_uri] = []
-                class_instances[class_uri].append(str(subj))
+            type_triples.append((str(subj), str(obj)))
+        
+        processed_count += 1
+        if processed_count % 50000 == 0:
+            print(f"Scanned {processed_count}/{total_triples} triples for types...")
+            # Update analysis progress
+            analysis_progress = (processed_count / total_triples) * 50  # 50% for type extraction
+            update_analysis_progress(job_id, analysis_progress, "Extracting type information...")
     
-    print(f"Found {len(all_classes_found)} total classes: {list(all_classes_found)[:5]}...")
+    print(f"Found {len(type_triples)} type assertions")
+    update_analysis_progress(job_id, 50, "Analyzing class instances...")
+    
+    # Process type triples
+    for i, (subj, class_uri) in enumerate(type_triples):
+        all_classes_found.add(class_uri)
+        
+        if class_uri in URI_TO_CLASS:
+            if class_uri not in class_instances:
+                class_instances[class_uri] = []
+            class_instances[class_uri].append(subj)
+        
+        if (i + 1) % 10000 == 0:
+            print(f"Processed {i + 1}/{len(type_triples)} type assertions...")
+            # Update analysis progress (50% to 80%)
+            analysis_progress = 50 + ((i + 1) / len(type_triples)) * 30
+            update_analysis_progress(job_id, analysis_progress, "Analyzing class instances...")
+    
+    print(f"Found {len(all_classes_found)} total classes")
     print(f"Found {len(class_instances)} known classes with instances")
+    
+    update_analysis_progress(job_id, 80, "Preparing results...")
     
     # Prepare structured analysis data
     class_analysis = []
@@ -258,21 +344,29 @@ def analyze_uploaded_data(graph, federal_state, graph_name, sparql_endpoint):
         'uploadInfo': upload_info
     })
     
+    update_analysis_progress(job_id, 90, "Creating class tabs...")
+    
     # Create tabs for each class with instances
+    tab_count = 0
     for class_uri, instances in class_instances.items():
         class_info = URI_TO_CLASS.get(class_uri, {})
         class_label = class_info.get('label_de', class_info.get('label_en', class_info.get('display_label', class_uri.split('/')[-1])))
         
-        # Get labels for instances
+        # Show all instances without limitation
+        limited_instances = instances
+        
+        # Get labels for instances (optimized lookup)
         instance_data = []
-        for instance_uri in instances:
-            # Try to find a label for this instance
-            instance_label = None
-            for subj, pred, obj in graph:
-                if str(subj) == instance_uri and pred == RDFS.label:
-                    instance_label = str(obj)
-                    break
-            
+        instance_labels = {}
+        
+        # Build a lookup map for labels to avoid repeated iteration
+        print(f"Getting labels for {len(limited_instances)} instances of {class_label}...")
+        for subj, pred, obj in graph:
+            if pred == RDFS.label and str(subj) in limited_instances:
+                instance_labels[str(subj)] = str(obj)
+        
+        for instance_uri in limited_instances:
+            instance_label = instance_labels.get(instance_uri)
             if not instance_label:
                 instance_label = instance_uri.split('/')[-1] if '/' in instance_uri else instance_uri
             
@@ -281,14 +375,42 @@ def analyze_uploaded_data(graph, federal_state, graph_name, sparql_endpoint):
                 'label': instance_label
             })
         
+        # Add tab label without limitation note
+        tab_label = f'{class_label} ({len(instances)})'
+        
         tabs.append({
-            'label': f'{class_label} ({len(instances)})',
+            'label': tab_label,
             'content': '',
             'type': 'table',
             'data': instance_data
         })
+        
+        tab_count += 1
+        # Update progress for tab creation
+        if tab_count % 5 == 0:
+            tab_progress = 90 + (tab_count / len(class_instances)) * 10
+            update_analysis_progress(job_id, tab_progress, f"Created {tab_count}/{len(class_instances)} class tabs...")
     
+    print(f"Analysis completed successfully - created {len(tabs)} tabs")
+    update_analysis_progress(job_id, 100, "Analysis completed!")
     return tabs
+
+# Add analysis progress tracking
+analysis_progress = {}
+
+def update_analysis_progress(job_id: str, progress: float, status: str):
+    """Update analysis progress"""
+    global analysis_progress
+    analysis_progress[job_id] = {
+        'progress': progress,
+        'status': status,
+        'timestamp': datetime.now().isoformat()
+    }
+    print(f"Analysis progress for {job_id}: {progress:.1f}% - {status}")
+
+def get_analysis_progress(job_id: str):
+    """Get analysis progress"""
+    return analysis_progress.get(job_id, {'progress': 0, 'status': 'Starting...', 'timestamp': datetime.now().isoformat()})
 
 @app.route('/upload_file', methods=['POST'])
 def upload_file():

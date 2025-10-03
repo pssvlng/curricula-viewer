@@ -33,7 +33,9 @@ import { DocumentService, UploadJob } from '../../services/document.service';
           </div>
         </div>
         
-        <div class="progress-section" *ngIf="job">
+        <!-- Phase 1: Upload Progress -->
+        <div class="progress-section" *ngIf="job && !isAnalysisPhase()">
+          <h4 class="phase-title">Phase 1: Uploading Data</h4>
           <div class="progress-info">
             <span class="progress-text">
               {{ job?.processed_triples | number }} / {{ job?.total_triples | number }} triples processed
@@ -51,6 +53,25 @@ import { DocumentService, UploadJob } from '../../services/document.service';
             Batch {{ job?.current_batch }} of {{ job?.total_batches }}
           </div>
         </div>
+
+        <!-- Phase 2: Analysis Progress -->
+        <div class="progress-section" *ngIf="job && isAnalysisPhase()">
+          <h4 class="phase-title">Phase 2: Analyzing Data</h4>
+          <div class="progress-info">
+            <span class="progress-text">{{ getAnalysisStatusText() }}</span>
+            <span class="progress-percentage">{{ getAnalysisProgress() | number:'1.1-1' }}%</span>
+          </div>
+          
+          <mat-progress-bar 
+            mode="determinate" 
+            [value]="getAnalysisProgress()"
+            color="accent">
+          </mat-progress-bar>
+          
+          <div class="analysis-status" *ngIf="job.analysisProgress">
+            {{ job.analysisProgress.status }}
+          </div>
+        </div>
         
         <div class="error-message" *ngIf="job?.status === 'failed'">
           <mat-icon>error</mat-icon>
@@ -59,7 +80,7 @@ import { DocumentService, UploadJob } from '../../services/document.service';
         
         <div class="success-message" *ngIf="job?.status === 'success'">
           <mat-icon>check_circle</mat-icon>
-          <span>Upload completed successfully!</span>
+          <span>Upload and analysis completed successfully!</span>
         </div>
       </mat-card-content>
       
@@ -101,6 +122,13 @@ import { DocumentService, UploadJob } from '../../services/document.service';
       margin-bottom: 20px;
     }
     
+    .phase-title {
+      color: #1976d2;
+      margin: 16px 0 8px 0;
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+    
     .progress-info {
       display: flex;
       justify-content: space-between;
@@ -135,6 +163,14 @@ import { DocumentService, UploadJob } from '../../services/document.service';
       margin-top: 8px;
       font-size: 12px;
       color: #666;
+    }
+
+    .analysis-status {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 12px;
+      color: #666;
+      font-style: italic;
     }
     
     .error-message, .success-message {
@@ -195,13 +231,39 @@ export class UploadProgressComponent implements OnInit, OnDestroy {
   }
 
   private startPolling(): void {
-    // Poll every 2 seconds
-    this.pollSubscription = interval(2000).subscribe(() => {
+    // Use adaptive polling - faster during processing, slower when complete
+    let pollInterval = 2000; // Start with 2 seconds
+    
+    this.pollSubscription = interval(pollInterval).subscribe(() => {
       this.checkJobStatus();
     });
     
     // Initial check
     this.checkJobStatus();
+  }
+
+  private adjustPollingInterval(): void {
+    if (this.job) {
+      let newInterval = 2000; // Default 2 seconds
+      
+      if (this.job.status === 'processing') {
+        if (this.isAnalysisPhase()) {
+          newInterval = 3000; // 3 seconds during analysis
+        } else {
+          newInterval = 1500; // 1.5 seconds during upload
+        }
+      } else {
+        newInterval = 5000; // 5 seconds for completed/failed jobs
+      }
+      
+      // Restart polling with new interval if needed
+      if (this.pollSubscription) {
+        this.stopPolling();
+        this.pollSubscription = interval(newInterval).subscribe(() => {
+          this.checkJobStatus();
+        });
+      }
+    }
   }
 
   private stopPolling(): void {
@@ -214,7 +276,13 @@ export class UploadProgressComponent implements OnInit, OnDestroy {
   private checkJobStatus(): void {
     this.documentService.getUploadStatus(this.jobId).subscribe({
       next: (job: UploadJob) => {
+        const previousStatus = this.job?.status;
         this.job = job;
+        
+        // Adjust polling interval based on status change
+        if (previousStatus !== job.status) {
+          this.adjustPollingInterval();
+        }
         
         // Stop polling when job is complete
         if (job.status === 'success' || job.status === 'failed') {
@@ -230,6 +298,13 @@ export class UploadProgressComponent implements OnInit, OnDestroy {
       },
       error: (error: any) => {
         console.error('Error checking job status:', error);
+        // Slow down polling on errors
+        if (this.pollSubscription) {
+          this.stopPolling();
+          this.pollSubscription = interval(5000).subscribe(() => {
+            this.checkJobStatus();
+          });
+        }
       }
     });
   }
@@ -239,6 +314,9 @@ export class UploadProgressComponent implements OnInit, OnDestroy {
     
     switch (this.job.status) {
       case 'processing':
+        if (this.isAnalysisPhase()) {
+          return 'Analyzing...';
+        }
         return 'Processing...';
       case 'success':
         return 'Completed';
@@ -247,6 +325,26 @@ export class UploadProgressComponent implements OnInit, OnDestroy {
       default:
         return this.job.status;
     }
+  }
+
+  isAnalysisPhase(): boolean {
+    return this.job != null && 
+           this.job.status === 'processing' && 
+           this.job.progress >= 100.0;
+  }
+
+  getAnalysisProgress(): number {
+    if (!this.job || !this.job.analysisProgress) {
+      return 0;
+    }
+    return this.job.analysisProgress.progress || 0;
+  }
+
+  getAnalysisStatusText(): string {
+    if (!this.job || !this.job.analysisProgress) {
+      return 'Preparing analysis...';
+    }
+    return this.job.analysisProgress.status || 'Analyzing...';
   }
 
   getStatusClass(): string {

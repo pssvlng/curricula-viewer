@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 
 export interface UploadInfo {
   status: string;
@@ -124,14 +125,36 @@ export interface TabInfo {
             <!-- Table content tab -->
             <div *ngIf="tab.type === 'table'" class="table-content">
               <div *ngIf="tab.data && tab.data.length > 0">
-                <mat-table [dataSource]="tab.data" class="mat-elevation-z2">
+                <mat-table [dataSource]="getDataSource(tab)" class="mat-elevation-z2" matSort>
                   <ng-container matColumnDef="label">
-                    <mat-header-cell *matHeaderCellDef>Label</mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header class="column-header">
+                      <div class="header-content">
+                        <span class="header-title">Label</span>
+                        <mat-form-field appearance="outline" class="header-filter">
+                          <input matInput 
+                                 (keyup)="applyColumnFilter($event, tab, 'label')" 
+                                 placeholder="Filter..."
+                                 class="filter-input">
+                          <mat-icon matSuffix class="filter-icon">filter_list</mat-icon>
+                        </mat-form-field>
+                      </div>
+                    </mat-header-cell>
                     <mat-cell *matCellDef="let element">{{ element.label }}</mat-cell>
                   </ng-container>
 
                   <ng-container matColumnDef="uri">
-                    <mat-header-cell *matHeaderCellDef>URI</mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header class="column-header">
+                      <div class="header-content">
+                        <span class="header-title">URI</span>
+                        <mat-form-field appearance="outline" class="header-filter">
+                          <input matInput 
+                                 (keyup)="applyColumnFilter($event, tab, 'uri')" 
+                                 placeholder="Filter..."
+                                 class="filter-input">
+                          <mat-icon matSuffix class="filter-icon">filter_list</mat-icon>
+                        </mat-form-field>
+                      </div>
+                    </mat-header-cell>
                     <mat-cell *matCellDef="let element">
                       <a [href]="element.uri" target="_blank" class="uri-link">
                         <code class="uri-code">{{ element.uri }}</code>
@@ -295,8 +318,105 @@ export interface TabInfo {
       overflow-x: auto;
     }
     
+    .filter-field {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 16px;
+    }
+    
     .mat-table {
       width: 100%;
+    }
+    
+    .column-header {
+      padding: 4px 8px !important;
+      background-color: #f8f9fa;
+      border-bottom: 2px solid #dee2e6;
+      vertical-align: top !important;
+    }
+    
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: 100%;
+      min-height: 60px;
+    }
+    
+    .header-title {
+      font-weight: 600;
+      color: #495057;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+    
+    .header-filter {
+      width: 100% !important;
+      min-width: 120px;
+    }
+    
+    .header-filter .mat-form-field-wrapper {
+      padding-bottom: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    
+    .header-filter .mat-form-field-infix {
+      padding: 2px 0 4px 0 !important;
+      border-top: none !important;
+    }
+    
+    .header-filter .mat-form-field-outline {
+      top: -2px !important;
+    }
+    
+    .header-filter .mat-form-field-outline-start,
+    .header-filter .mat-form-field-outline-end {
+      border-width: 1px !important;
+    }
+    
+    .header-filter .mat-form-field-outline-thick .mat-form-field-outline-start,
+    .header-filter .mat-form-field-outline-thick .mat-form-field-outline-end,
+    .header-filter .mat-form-field-outline-thick .mat-form-field-outline-gap {
+      border-width: 1px !important;
+    }
+    
+    .filter-input {
+      font-size: 11px !important;
+      padding: 2px 4px !important;
+      height: 20px !important;
+      line-height: 20px !important;
+    }
+    
+    .filter-icon {
+      font-size: 14px !important;
+      color: #6c757d !important;
+      width: 14px !important;
+      height: 14px !important;
+    }
+    
+    .mat-header-cell {
+      color: #495057 !important;
+      font-weight: 600 !important;
+    }
+    
+    .mat-sort-header-arrow {
+      color: #007bff !important;
+    }
+    
+    .mat-row:hover {
+      background-color: #f8f9fa !important;
+    }
+    
+    .mat-cell {
+      padding: 12px 8px !important;
+      border-bottom: 1px solid #dee2e6 !important;
+    }
+    
+    .mat-header-row {
+      background-color: #f8f9fa !important;
     }
     
     .uri-code {
@@ -355,10 +475,71 @@ export class ResultsComponent implements OnInit {
   @Output() newUploadRequested = new EventEmitter<void>();
   tabData: TabInfo[] = [];
   displayedColumns: string[] = ['label', 'uri'];
+  dataSources: Map<string, MatTableDataSource<any>> = new Map();
+  columnFilters: Map<string, {label: string, uri: string}> = new Map();
 
   ngOnInit(): void {
     if (this.results && this.results.tabs) {
       this.tabData = this.results.tabs;
+      this.initializeDataSources();
+    }
+  }
+
+  initializeDataSources(): void {
+    this.tabData.forEach(tab => {
+      if (tab.type === 'table' && tab.data) {
+        const dataSource = new MatTableDataSource(tab.data);
+        
+        // Configure custom filter predicate for multi-column filtering
+        dataSource.filterPredicate = (data: any, filter: string) => {
+          const filters = JSON.parse(filter);
+          const labelMatch = !filters.label || data.label.toLowerCase().includes(filters.label.toLowerCase());
+          const uriMatch = !filters.uri || data.uri.toLowerCase().includes(filters.uri.toLowerCase());
+          return labelMatch && uriMatch;
+        };
+        
+        // Configure sorting
+        dataSource.sortingDataAccessor = (item: any, property: string) => {
+          switch (property) {
+            case 'label': return item.label ? item.label.toLowerCase() : '';
+            case 'uri': return item.uri ? item.uri.toLowerCase() : '';
+            default: return item[property];
+          }
+        };
+        
+        this.dataSources.set(tab.label, dataSource);
+        this.columnFilters.set(tab.label, {label: '', uri: ''});
+      }
+    });
+  }
+
+  getDataSource(tab: TabInfo): MatTableDataSource<any> {
+    return this.dataSources.get(tab.label) || new MatTableDataSource(tab.data || []);
+  }
+
+  applyFilter(event: Event, tab: TabInfo): void {
+    const filterValue = (event.target as HTMLInputElement).value;
+    const dataSource = this.dataSources.get(tab.label);
+    if (dataSource) {
+      dataSource.filter = filterValue.trim().toLowerCase();
+    }
+  }
+
+  applyColumnFilter(event: Event, tab: TabInfo, column: string): void {
+    const filterValue = (event.target as HTMLInputElement).value;
+    const filters = this.columnFilters.get(tab.label) || {label: '', uri: ''};
+    
+    if (column === 'label') {
+      filters.label = filterValue;
+    } else if (column === 'uri') {
+      filters.uri = filterValue;
+    }
+    
+    this.columnFilters.set(tab.label, filters);
+    
+    const dataSource = this.dataSources.get(tab.label);
+    if (dataSource) {
+      dataSource.filter = JSON.stringify(filters);
     }
   }
 

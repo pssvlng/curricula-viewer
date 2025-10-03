@@ -30,6 +30,11 @@ export interface UploadJob {
   total_batches: number;
   error_message?: string;
   result_data?: any;
+  analysisProgress?: {
+    progress: number;
+    status: string;
+    timestamp: string;
+  };
 }
 
 @Injectable({
@@ -50,6 +55,10 @@ export class DocumentService {
 
   getUploadStatus(jobId: string): Observable<UploadJob> {
     return this.http.get<UploadJob>(`${this.apiUrl}/upload/status/${jobId}`);
+  }
+
+  getAnalysisProgress(jobId: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/upload/analysis_progress/${jobId}`);
   }
 
   getAllUploadJobs(): Observable<UploadJob[]> {
