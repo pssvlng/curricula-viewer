@@ -267,21 +267,79 @@ def analyze_uploaded_data_optimized(graph, federal_state, graph_name, sparql_end
     class_instances = {}
     all_classes_found = set()
     
-    # Get all type triples first (more efficient than iterating all triples)
-    print("Extracting type assertions...")
-    type_triples = []
-    processed_count = 0
+    # Use RDFLib's efficient querying instead of iterating all triples
+    print("Extracting type assertions using chunked SPARQL queries...")
     
-    for subj, pred, obj in graph:
-        if pred == RDF.type:
-            type_triples.append((str(subj), str(obj)))
+    type_triples = []
+    
+    try:
+        # First, get the total count of type assertions for progress tracking
+        count_query = """
+        SELECT (COUNT(*) as ?count) WHERE {
+            ?subject a ?type .
+        }
+        """
+        count_results = graph.query(count_query)
+        total_type_assertions = 0
+        for row in count_results:
+            total_type_assertions = int(row.count)
+            break
         
-        processed_count += 1
-        if processed_count % 50000 == 0:
-            print(f"Scanned {processed_count}/{total_triples} triples for types...")
-            # Update analysis progress
-            analysis_progress = (processed_count / total_triples) * 50  # 50% for type extraction
-            update_analysis_progress(job_id, analysis_progress, "Extracting type information...")
+        print(f"Found {total_type_assertions} type assertions to process")
+        
+        if total_type_assertions == 0:
+            print("No type assertions found")
+        else:
+            # Process in chunks for better progress feedback
+            chunk_size = 10000  # Process 10k type assertions at a time
+            processed_types = 0
+            
+            while processed_types < total_type_assertions:
+                # Chunked query with LIMIT and OFFSET
+                chunked_query = f"""
+                SELECT ?subject ?type WHERE {{
+                    ?subject a ?type .
+                }}
+                LIMIT {chunk_size} OFFSET {processed_types}
+                """
+                
+                chunk_results = graph.query(chunked_query)
+                chunk_count = 0
+                
+                for row in chunk_results:
+                    type_triples.append((str(row.subject), str(row.type)))
+                    chunk_count += 1
+                
+                processed_types += chunk_count
+                
+                # Update progress (0% to 50% for type extraction)
+                progress_percent = (processed_types / total_type_assertions) * 50
+                update_analysis_progress(
+                    job_id, 
+                    progress_percent, 
+                    f"Extracting type information... ({processed_types:,}/{total_type_assertions:,})"
+                )
+                
+                print(f"Processed {processed_types:,}/{total_type_assertions:,} type assertions ({progress_percent:.1f}%)")
+                
+                # Break if we got fewer results than expected (end of data)
+                if chunk_count < chunk_size:
+                    break
+                    
+    except Exception as e:
+        print(f"Chunked SPARQL query failed, falling back to iteration: {e}")
+        # Fallback to the original method if SPARQL fails
+        processed_count = 0
+        for subj, pred, obj in graph:
+            if pred == RDF.type:
+                type_triples.append((str(subj), str(obj)))
+            
+            processed_count += 1
+            if processed_count % 50000 == 0:
+                print(f"Scanned {processed_count}/{total_triples} triples for types...")
+                # Update analysis progress
+                analysis_progress = (processed_count / total_triples) * 50  # 50% for type extraction
+                update_analysis_progress(job_id, analysis_progress, "Extracting type information...")
     
     print(f"Found {len(type_triples)} type assertions")
     update_analysis_progress(job_id, 50, "Analyzing class instances...")
@@ -348,6 +406,8 @@ def analyze_uploaded_data_optimized(graph, federal_state, graph_name, sparql_end
     
     # Create tabs for each class with instances
     tab_count = 0
+    total_classes = len(class_instances)
+    
     for class_uri, instances in class_instances.items():
         class_info = URI_TO_CLASS.get(class_uri, {})
         class_label = class_info.get('label_de', class_info.get('label_en', class_info.get('display_label', class_uri.split('/')[-1])))
@@ -355,16 +415,61 @@ def analyze_uploaded_data_optimized(graph, federal_state, graph_name, sparql_end
         # Show all instances without limitation
         limited_instances = instances
         
-        # Get labels for instances (optimized lookup)
+        # Get labels for instances (optimized chunked lookup for better progress)
         instance_data = []
         instance_labels = {}
         
-        # Build a lookup map for labels to avoid repeated iteration
         print(f"Getting labels for {len(limited_instances)} instances of {class_label}...")
-        for subj, pred, obj in graph:
-            if pred == RDFS.label and str(subj) in limited_instances:
-                instance_labels[str(subj)] = str(obj)
         
+        # For large instance sets, use chunked SPARQL queries for label lookup
+        if len(limited_instances) > 5000:
+            # Use chunked SPARQL approach for large instance sets
+            chunk_size = 1000
+            processed_instances = 0
+            
+            for i in range(0, len(limited_instances), chunk_size):
+                chunk_instances = limited_instances[i:i + chunk_size]
+                
+                # Create VALUES clause for the chunk
+                values_clause = "VALUES ?subject { " + " ".join(f"<{uri}>" for uri in chunk_instances) + " }"
+                
+                label_query = f"""
+                SELECT ?subject ?label WHERE {{
+                    {values_clause}
+                    ?subject <{RDFS.label}> ?label .
+                }}
+                """
+                
+                try:
+                    label_results = graph.query(label_query)
+                    for row in label_results:
+                        instance_labels[str(row.subject)] = str(row.label)
+                except Exception as e:
+                    print(f"Label query failed for chunk, using fallback: {e}")
+                    # Fallback to iteration for this chunk
+                    for subj, pred, obj in graph:
+                        if pred == RDFS.label and str(subj) in chunk_instances:
+                            instance_labels[str(subj)] = str(obj)
+                
+                processed_instances += len(chunk_instances)
+                
+                # Update progress within this class tab creation
+                class_progress = 90 + (tab_count / total_classes) * 10
+                chunk_progress = (processed_instances / len(limited_instances)) * 0.8  # 80% of this class's progress
+                total_progress = class_progress + chunk_progress * (10 / total_classes)
+                
+                update_analysis_progress(
+                    job_id, 
+                    total_progress, 
+                    f"Creating class tab {tab_count + 1}/{total_classes}: {class_label} ({processed_instances:,}/{len(limited_instances):,} labels)"
+                )
+        else:
+            # For smaller sets, use the original iteration method
+            for subj, pred, obj in graph:
+                if pred == RDFS.label and str(subj) in limited_instances:
+                    instance_labels[str(subj)] = str(obj)
+        
+        # Build the instance data
         for instance_uri in limited_instances:
             instance_label = instance_labels.get(instance_uri)
             if not instance_label:
@@ -386,10 +491,14 @@ def analyze_uploaded_data_optimized(graph, federal_state, graph_name, sparql_end
         })
         
         tab_count += 1
-        # Update progress for tab creation
-        if tab_count % 5 == 0:
-            tab_progress = 90 + (tab_count / len(class_instances)) * 10
-            update_analysis_progress(job_id, tab_progress, f"Created {tab_count}/{len(class_instances)} class tabs...")
+        
+        # Update progress for completed tab
+        tab_progress = 90 + (tab_count / total_classes) * 10
+        update_analysis_progress(
+            job_id, 
+            tab_progress, 
+            f"Created class tab {tab_count}/{total_classes}: {class_label} ({len(instances):,} instances)"
+        )
     
     print(f"Analysis completed successfully - created {len(tabs)} tabs")
     update_analysis_progress(job_id, 100, "Analysis completed!")

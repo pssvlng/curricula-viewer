@@ -1,4 +1,6 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Input, OnInit, Output, QueryList, ViewChildren } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
 export interface UploadInfo {
@@ -125,46 +127,62 @@ export interface TabInfo {
             <!-- Table content tab -->
             <div *ngIf="tab.type === 'table'" class="table-content">
               <div *ngIf="tab.data && tab.data.length > 0">
-                <mat-table [dataSource]="getDataSource(tab)" class="mat-elevation-z2" matSort>
-                  <ng-container matColumnDef="label">
-                    <mat-header-cell *matHeaderCellDef mat-sort-header class="column-header">
-                      <div class="header-content">
-                        <span class="header-title">Label</span>
-                        <mat-form-field appearance="outline" class="header-filter">
-                          <input matInput 
-                                 (keyup)="applyColumnFilter($event, tab, 'label')" 
-                                 placeholder="Filter..."
-                                 class="filter-input">
-                          <mat-icon matSuffix class="filter-icon">filter_list</mat-icon>
-                        </mat-form-field>
-                      </div>
-                    </mat-header-cell>
-                    <mat-cell *matCellDef="let element">{{ element.label }}</mat-cell>
-                  </ng-container>
+                <div matSort #sort>
+                  <mat-table [dataSource]="getDataSource(tab)" class="mat-elevation-z2">
+                    <ng-container matColumnDef="label">
+                      <mat-header-cell *matHeaderCellDef mat-sort-header class="column-header">
+                        <div class="header-content">
+                          <span class="header-title">Label</span>
+                          <mat-form-field appearance="outline" class="header-filter">
+                            <input matInput 
+                                   (keyup)="applyColumnFilter($event, tab, 'label')" 
+                                   placeholder="Filter..."
+                                   class="filter-input">
+                            <mat-icon matSuffix class="filter-icon">filter_list</mat-icon>
+                          </mat-form-field>
+                        </div>
+                      </mat-header-cell>
+                      <mat-cell *matCellDef="let element">{{ element.label }}</mat-cell>
+                    </ng-container>
 
-                  <ng-container matColumnDef="uri">
-                    <mat-header-cell *matHeaderCellDef mat-sort-header class="column-header">
-                      <div class="header-content">
-                        <span class="header-title">URI</span>
-                        <mat-form-field appearance="outline" class="header-filter">
-                          <input matInput 
-                                 (keyup)="applyColumnFilter($event, tab, 'uri')" 
-                                 placeholder="Filter..."
-                                 class="filter-input">
-                          <mat-icon matSuffix class="filter-icon">filter_list</mat-icon>
-                        </mat-form-field>
-                      </div>
-                    </mat-header-cell>
-                    <mat-cell *matCellDef="let element">
-                      <a [href]="element.uri" target="_blank" class="uri-link">
-                        <code class="uri-code">{{ element.uri }}</code>
-                      </a>
-                    </mat-cell>
-                  </ng-container>
+                    <ng-container matColumnDef="uri">
+                      <mat-header-cell *matHeaderCellDef mat-sort-header class="column-header">
+                        <div class="header-content">
+                          <span class="header-title">URI</span>
+                          <mat-form-field appearance="outline" class="header-filter">
+                            <input matInput 
+                                   (keyup)="applyColumnFilter($event, tab, 'uri')" 
+                                   placeholder="Filter..."
+                                   class="filter-input">
+                            <mat-icon matSuffix class="filter-icon">filter_list</mat-icon>
+                          </mat-form-field>
+                        </div>
+                      </mat-header-cell>
+                      <mat-cell *matCellDef="let element">
+                        <a [href]="element.uri" target="_blank" class="uri-link">
+                          <code class="uri-code">{{ element.uri }}</code>
+                        </a>
+                      </mat-cell>
+                    </ng-container>
 
-                  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-                  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-                </mat-table>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                  </mat-table>
+                </div>
+                
+                <!-- Paginator -->
+                <mat-paginator 
+                  #paginator
+                  [pageSizeOptions]="[5, 10, 20, 50, 100]" 
+                  [pageSize]="20"
+                  [length]="tab.data.length"
+                  showFirstLastButtons
+                  aria-label="Select page"
+                  (page)="onPageChange(tab, $event)">
+                </mat-paginator>
+                
+                <!-- Connect paginator after render -->
+                <div style="display: none;">{{ connectPaginator(tab, paginator) }}</div>
               </div>
               
               <div *ngIf="!tab.data || tab.data.length === 0" class="no-data">
@@ -445,6 +463,11 @@ export interface TabInfo {
       padding: 12px 8px;
     }
     
+    .mat-paginator {
+      background-color: #f8f9fa;
+      border-top: 1px solid #dee2e6;
+    }
+    
     .no-data {
       text-align: center;
       padding: 32px;
@@ -470,9 +493,12 @@ export interface TabInfo {
     }
   `]
 })
-export class ResultsComponent implements OnInit {
+export class ResultsComponent implements OnInit, AfterViewInit {
   @Input() results: any = null;
   @Output() newUploadRequested = new EventEmitter<void>();
+  
+  @ViewChildren(MatSort) sorts!: QueryList<MatSort>;
+  
   tabData: TabInfo[] = [];
   displayedColumns: string[] = ['label', 'uri'];
   dataSources: Map<string, MatTableDataSource<any>> = new Map();
@@ -481,40 +507,79 @@ export class ResultsComponent implements OnInit {
   ngOnInit(): void {
     if (this.results && this.results.tabs) {
       this.tabData = this.results.tabs;
-      this.initializeDataSources();
     }
   }
 
-  initializeDataSources(): void {
-    this.tabData.forEach(tab => {
-      if (tab.type === 'table' && tab.data) {
-        const dataSource = new MatTableDataSource(tab.data);
+  ngAfterViewInit(): void {
+    // Connect sorts to data sources after view initialization
+    setTimeout(() => {
+      this.connectSorts();
+    });
+  }
+
+  connectSorts(): void {
+    // Connect each sort to their respective data sources
+    let tableIndex = 0;
+    this.tabData.forEach((tab) => {
+      if (tab.type === 'table' && tab.data && tab.data.length > 0) {
+        const dataSource = this.getDataSource(tab);
+        const sortArray = this.sorts.toArray();
         
-        // Configure custom filter predicate for multi-column filtering
-        dataSource.filterPredicate = (data: any, filter: string) => {
-          const filters = JSON.parse(filter);
-          const labelMatch = !filters.label || data.label.toLowerCase().includes(filters.label.toLowerCase());
-          const uriMatch = !filters.uri || data.uri.toLowerCase().includes(filters.uri.toLowerCase());
-          return labelMatch && uriMatch;
-        };
-        
-        // Configure sorting
-        dataSource.sortingDataAccessor = (item: any, property: string) => {
-          switch (property) {
-            case 'label': return item.label ? item.label.toLowerCase() : '';
-            case 'uri': return item.uri ? item.uri.toLowerCase() : '';
-            default: return item[property];
-          }
-        };
-        
-        this.dataSources.set(tab.label, dataSource);
-        this.columnFilters.set(tab.label, {label: '', uri: ''});
+        if (sortArray[tableIndex]) {
+          dataSource.sort = sortArray[tableIndex];
+          console.log(`Connected sort for ${tab.label}`);
+        }
+        tableIndex++;
       }
     });
   }
 
   getDataSource(tab: TabInfo): MatTableDataSource<any> {
-    return this.dataSources.get(tab.label) || new MatTableDataSource(tab.data || []);
+    let dataSource = this.dataSources.get(tab.label);
+    if (!dataSource) {
+      dataSource = new MatTableDataSource(tab.data || []);
+      
+      // Configure custom filter predicate for multi-column filtering
+      dataSource.filterPredicate = (data: any, filter: string) => {
+        const filters = JSON.parse(filter);
+        const labelMatch = !filters.label || data.label.toLowerCase().includes(filters.label.toLowerCase());
+        const uriMatch = !filters.uri || data.uri.toLowerCase().includes(filters.uri.toLowerCase());
+        return labelMatch && uriMatch;
+      };
+      
+      // Configure sorting
+      dataSource.sortingDataAccessor = (item: any, property: string) => {
+        switch (property) {
+          case 'label': return item.label ? item.label.toLowerCase() : '';
+          case 'uri': return item.uri ? item.uri.toLowerCase() : '';
+          default: return item[property];
+        }
+      };
+      
+      this.dataSources.set(tab.label, dataSource);
+      this.columnFilters.set(tab.label, {label: '', uri: ''});
+    }
+    return dataSource;
+  }
+
+  setupPagination(tab: TabInfo, event: any): void {
+    // This method is called when page changes, but we don't need to do anything special
+    // The mat-paginator automatically handles the pagination of the data source
+  }
+
+  onPageChange(tab: TabInfo, event: any): void {
+    // Handle page changes if needed
+    console.log(`Page changed for ${tab.label}:`, event);
+  }
+
+  connectPaginator(tab: TabInfo, paginator: MatPaginator): string {
+    // This method is called from the template to connect paginator to data source
+    const dataSource = this.dataSources.get(tab.label);
+    if (dataSource && paginator && !dataSource.paginator) {
+      dataSource.paginator = paginator;
+      console.log(`Connected paginator for ${tab.label}`);
+    }
+    return ''; // Return empty string for template binding
   }
 
   applyFilter(event: Event, tab: TabInfo): void {
